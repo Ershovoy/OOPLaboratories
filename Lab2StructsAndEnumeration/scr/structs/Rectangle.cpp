@@ -79,13 +79,14 @@ void Exchange(Rectangle& rectangle1, Rectangle& rectangle2)
 	rectangle2 = temporary;
 }
 
+// TODO: функция должна возвращать индекс, а работа с консолью вне функций с обработкой данных
 void FindRectangleWithMaxLength(Rectangle* rectangles, int count)
 {
 	if (count < 0)
 	{
 		throw std::exception("Exception: Negative array length");
 	}
-
+	// TODO: инверсия условия
 	if (count > 0)
 	{
 		Rectangle greaterLength;
@@ -108,11 +109,12 @@ void FindRectangleWithMaxLength(Rectangle* rectangles, int count)
 
 void FindRectangleWithMaxArea(Rectangle* rectangles, int count)
 {
+	// TODO: здесь и выше дублируются проверки внутри функции - вынести в отдельную функцию AssertArray()
 	if (count < 0)
 	{
 		throw std::exception("Exception: Negative array length");
 	}
-
+	// TODO: инверсия условия
 	if (count > 0)
 	{
 		Rectangle greaterArea;

@@ -8,6 +8,7 @@ void WrongPointers()
 	flight.MinutesFlightTime = 100;
 
 	Movie movie;
+	// TODO: интересный выбор
 	movie.Title = "Mulholland Dr.";
 	movie.Genre = "thriller";
 	movie.Rating = 7.649;
