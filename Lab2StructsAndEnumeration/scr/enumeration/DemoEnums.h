@@ -21,8 +21,8 @@ void DemoEnums();
 
 // Задача 3:
 // Написать функцию вывода цвет в консоль
-// TODO: грамошибка
-void WtireColor(Color color);
+// TODO: грамошибка +
+void WriteColor(Color color);
 
 // Задача 4:
 // Написать функцию чтения цвет с клавиатуры

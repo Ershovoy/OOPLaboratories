@@ -79,58 +79,48 @@ void Exchange(Rectangle& rectangle1, Rectangle& rectangle2)
 	rectangle2 = temporary;
 }
 
-// TODO: функция должна возвращать индекс, а работа с консолью вне функций с обработкой данных
-void FindRectangleWithMaxLength(Rectangle* rectangles, int count)
+// TODO: функция должна возвращать индекс, а работа с консолью вне функций с обработкой данных +
+int FindRectangleWithMaxLength(Rectangle* rectangles, int count)
 {
-	if (count < 0)
-	{
-		throw std::exception("Exception: Negative array length");
-	}
-	// TODO: инверсия условия
-	if (count > 0)
-	{
-		Rectangle greaterLength;
-		for (int i = 0; i < count; ++i)
-		{
-			if (greaterLength.Length < rectangles[i].Length)
-			{
-				greaterLength = rectangles[i];
-			}
-		}
-
-		std::cout << "Rectangle with the greater length has size: " 
-			<< greaterLength.Length << "x" << greaterLength.Width << '\n';
-	}
-	else
+	AssertArray(count);
+	// TODO: инверсия условия +
+	if (count <= 0)
 	{
 		std::cout << "No Rectangles in the array\n";
+		return -1;
 	}
+
+	int greaterLength = 0;
+	for (int i = 0; i < count; ++i)
+	{
+		if (rectangles[greaterLength].Length < rectangles[i].Length)
+		{
+			greaterLength = i;
+		}
+	}
+
+	return greaterLength;
 }
 
-void FindRectangleWithMaxArea(Rectangle* rectangles, int count)
+int FindRectangleWithMaxArea(Rectangle* rectangles, int count)
 {
-	// TODO: здесь и выше дублируются проверки внутри функции - вынести в отдельную функцию AssertArray()
-	if (count < 0)
-	{
-		throw std::exception("Exception: Negative array length");
-	}
-	// TODO: инверсия условия
-	if (count > 0)
-	{
-		Rectangle greaterArea;
-		for (int i = 0; i < count; ++i)
-		{
-			if (greaterArea.Length * greaterArea.Width < rectangles[i].Length * rectangles[i].Width)
-			{
-				greaterArea = rectangles[i];
-			}
-		}
-
-		std::cout << "Rectangle with the greater area has size: "
-			<< greaterArea.Length << "x" << greaterArea.Width << '\n';
-	}
-	else
+	// TODO: здесь и выше дублируются проверки внутри функции - вынести в отдельную функцию AssertArray() +
+	AssertArray(count);
+	// TODO: инверсия условия +
+	if (count <= 0)
 	{
 		std::cout << "No Rectangles in the array\n";
+		return -1;
 	}
+
+	int greaterArea = 0;
+	for (int i = 0; i < count; ++i)
+	{
+		if (rectangles[greaterArea].Length * rectangles[greaterArea].Width < rectangles[i].Length * rectangles[i].Width)
+		{
+			greaterArea = i;
+		}
+	}
+
+	return greaterArea;
 }

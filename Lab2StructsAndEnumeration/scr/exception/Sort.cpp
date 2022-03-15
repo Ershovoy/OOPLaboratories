@@ -46,6 +46,10 @@ void DemoSort()
 	{
 		std::cerr << e.what() << '\n';
 	}
+	catch (...)
+	{
+
+	}
 
 	delete[] values;
 }

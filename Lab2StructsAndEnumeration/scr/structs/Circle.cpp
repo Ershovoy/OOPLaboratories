@@ -12,7 +12,11 @@ void DemoCircle()
 	Circle* copiedCircle3 = CopyCircle(circle3);
 	Circle* copiedCircle4 = CopyCircle(circle4);
 
-	// TODO: объекты созданы динамически. Где освобождение памяти?
+	// TODO: объекты созданы динамически. Где освобождение памяти? +
+	delete circle1;
+	delete circle2;
+	delete circle3;
+	delete circle4;
 }
 
 Circle* MakeCircle(double x, double y, double radius, std::string color)

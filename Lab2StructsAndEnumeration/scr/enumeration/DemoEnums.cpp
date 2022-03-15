@@ -20,8 +20,8 @@ void DemoEnums()
 	std::cout << "Count of Purple color in the array: " << CountColor(colorArray, arraySize, Color::Purple) << '\n';
 }
 
-// TODO: грамошибка
-void WtireColor(Color color)
+// TODO: грамошибка +
+void WriteColor(Color color)
 {
 	switch (color)
 	{

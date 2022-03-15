@@ -41,8 +41,13 @@ void Exchange(Rectangle& rectangle1, Rectangle& rectangle2);
 
 // Задача 5:
 // Написать функцию поиска прямоугольника в массиве с самой большой длиной
-void FindRectangleWithMaxLength(Rectangle* rectangles, int count);
+int FindRectangleWithMaxLength(Rectangle* rectangles, int count);
 
 // Задача 6:
 // Написать функция поиска прямоугольника с максимальной площадью
-void FindRectangleWithMaxArea(Rectangle* rectangles, int count);
+int FindRectangleWithMaxArea(Rectangle* rectangles, int count);
+
+void AssertArray(int count)
+{
+	if(count < 0) throw std::exception("Exception: Negative array length");
+}

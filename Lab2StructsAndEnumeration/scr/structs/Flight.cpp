@@ -76,7 +76,8 @@ void DemoDynamicFlights()
 		<< " for " << pFlights[3].MinutesFlightTime << " minutes.\n";
 
 	FindShortestFlight(pFlights, flightCount);
-	// TODO: утечка памяти
+	// TODO: утечка памяти +
+	delete[] pFlights;
 }
 
 void FindShortestFlight(Flight* flights, int count)
@@ -86,26 +87,25 @@ void FindShortestFlight(Flight* flights, int count)
 		throw std::exception("Exception: Negative array length");
 	}
 
-	// TODO: сделать инверсию условия - сначала то, 
+	// TODO: сделать инверсию условия - сначала то +, 
 	// что сейчас делается в else с оператором return, затем приоритетная ветка
-	if (count > 0)
-	{
-		int shorterFlightIndex = 0;
-		for (int i = 0; i < count; ++i)
-		{
-			if (flights[shorterFlightIndex].MinutesFlightTime > flights[i].MinutesFlightTime)
-			{
-				shorterFlightIndex = i;
-			}
-		}
-
-		std::cout << "Flight with the shorter flight time:\n\t";
-		std::cout << "Flight: " << flights[shorterFlightIndex].Departure << " -> "
-			<< flights[shorterFlightIndex].Destination << " for " 
-			<< flights[shorterFlightIndex].MinutesFlightTime << " minutes.\n";
-	}
-	else
+	if (count <= 0)
 	{
 		std::cout << "Array has no flights\n";
+		return;
 	}
+
+	int shorterFlightIndex = 0;
+	for (int i = 0; i < count; ++i)
+	{
+		if (flights[shorterFlightIndex].MinutesFlightTime > flights[i].MinutesFlightTime)
+		{
+			shorterFlightIndex = i;
+		}
+	}
+
+	std::cout << "Flight with the shorter flight time:\n\t";
+	std::cout << "Flight: " << flights[shorterFlightIndex].Departure << " -> "
+		<< flights[shorterFlightIndex].Destination << " for "
+		<< flights[shorterFlightIndex].MinutesFlightTime << " minutes.\n";
 }
