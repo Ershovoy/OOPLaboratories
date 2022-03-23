@@ -5,6 +5,8 @@
 
 #include <iostream>
 
+//TODO: UTF8?
+////TODO: Doxygen?
 // UML диаграмма классов
 // https://miro.com/app/board/uXjVOFkgw2A=/?invite_link_id=761995098208
 

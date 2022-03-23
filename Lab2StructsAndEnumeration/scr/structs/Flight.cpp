@@ -15,6 +15,7 @@ void DemoFlight()
 	std::cout << "Enter flight flight time in minutes: ";
 	std::cin >> flight2.MinutesFlightTime;
 
+	//TODO: bug?
 	Flight flight3;
 	flight1.Departure = "Novosibirsk";
 	flight1.Destination = "Tomsk";
@@ -37,6 +38,7 @@ void DemoFlight()
 
 void DemoDynamicFlight()
 {
+	//TODO: RSDN
 	Flight* pFlight = new Flight;
 	pFlight->Departure = "Petersburg";
 	pFlight->Destination = "Moscoy";
@@ -51,6 +53,7 @@ void DemoDynamicFlight()
 void DemoDynamicFlights()
 {
 	const int flightCount = 4;
+	//TODO: RSDN
 	Flight* pFlights = new Flight[flightCount];
 
 	pFlights[0].Departure = "Petersburg";
@@ -86,7 +89,7 @@ void FindShortestFlight(Flight* flights, int count)
 	{
 		throw std::exception("Exception: Negative array length");
 	}
-
+	//TODO: UTF8?
 	// TODO: сделать инверсию условия - сначала то +, 
 	// что сейчас делается в else с оператором return, затем приоритетная ветка
 	if (count <= 0)

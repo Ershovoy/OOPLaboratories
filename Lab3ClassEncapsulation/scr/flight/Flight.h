@@ -5,6 +5,9 @@
 #include <string>
 #include <exception>
 
+//TODO: UTF8?
+//TODO: Doxygen?
+
 // 3.3.8
 // Задание: Создать класс авиарейс с соответсвующими конструкторами, и сеттерами, и проверкой данных.
 
@@ -18,6 +21,7 @@ class Flight
 
 public:
 	Flight();
+	//TODO: RSDN
 	Flight(int id, std::string departure, std::string destination, Time departureTime, Time destinationTime);
 
 	// 3.3.11, 3.5.4

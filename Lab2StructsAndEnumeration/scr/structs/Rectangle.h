@@ -2,7 +2,8 @@
 
 #include <string>
 #include <iostream>
-
+//TODO: UTF8?
+//TODO: Doxygen?
 // 2.2.2 Создание структур
 // Задача: Описать структуру прямоугольник
 

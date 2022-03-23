@@ -1,7 +1,8 @@
-#pragma once
+﻿#pragma once
 
 #include <string>
-
+//TODO: Doxygen?
+//TODO: Хранение строк по значению?
 struct Book
 {
 	std::string Title;

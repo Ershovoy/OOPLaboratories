@@ -4,12 +4,14 @@
 
 #include <exception>
 
-
+//TODO: UTF8?
+//TODO: Doxygen?
 // UML диаграмма классов
 // https://miro.com/app/board/uXjVOFkgw2A=/?invite_link_id=130325368379
 
 class Rectangle
 {
+	//TODO: RSDN
 	float _width, _length;
 	Point _centre;
 

@@ -4,6 +4,7 @@
 
 #include <iostream>
 
+//TODO: Doxygen?
 void DemoRectangleWithPoint();
 
 void WriteRectangleToConsole(const Rectangle& rectangle);

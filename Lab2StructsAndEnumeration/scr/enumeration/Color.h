@@ -1,5 +1,6 @@
 #pragma once
 
+//TODO: Doxygen?
 enum class Color
 {
 	Red,

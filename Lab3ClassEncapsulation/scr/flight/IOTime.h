@@ -4,4 +4,5 @@
 
 #include <ostream>
 
+//TODO: Doxygen?
 std::ostream& operator<<(std::ostream& os, const Time& time);

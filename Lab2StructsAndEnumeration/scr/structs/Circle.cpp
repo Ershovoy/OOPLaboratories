@@ -1,4 +1,4 @@
-#include "Circle.h"
+﻿#include "Circle.h"
 
 void DemoCircle()
 {
@@ -12,7 +12,8 @@ void DemoCircle()
 	Circle* copiedCircle3 = CopyCircle(circle3);
 	Circle* copiedCircle4 = CopyCircle(circle4);
 
-	// TODO: ������� ������� �����������. ��� ������������ ������? +
+	//TODO: UTF8?
+	// TODO: îáúåêòû ñîçäàíû äèíàìè÷åñêè. Ãäå îñâîáîæäåíèå ïàìÿòè? +
 	delete circle1;
 	delete circle2;
 	delete circle3;
@@ -29,6 +30,7 @@ Circle* MakeCircle(double x, double y, double radius, std::string color)
 	return circle;
 }
 
+//TODO: Это же не копирование, а просто присваивание указателя.
 Circle* CopyCircle(Circle* cirlce)
 {
 	Circle* newCircle = new Circle;

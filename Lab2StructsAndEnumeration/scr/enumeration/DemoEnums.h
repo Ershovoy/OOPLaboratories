@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+//TODO: UTF8?
+//TODO: Doxygen?
 // 2.2.8 Перечисления
 
 // Задача 1: 

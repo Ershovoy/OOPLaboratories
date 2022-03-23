@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 
+//TODO: Doxygen?
+//TODO: UTF8?
 // 2.2.2 Создание структур
 // Задача: Описать структуру фильм
 
