@@ -1,4 +1,4 @@
-#include "Song.h"
+﻿#include "Song.h"
 
 Song::Song() : _title(""), _durationInSecond(0), _genre() {}
 
@@ -18,6 +18,7 @@ bool Song::operator==(const Song& song)
 	return false;
 }
 
+//TODO: передача по значению?
 void Song::SetTitle(std::string title)
 {
 	_title = title;

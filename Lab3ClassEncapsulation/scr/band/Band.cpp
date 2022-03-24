@@ -1,10 +1,10 @@
-#include "Band.h"
+﻿#include "Band.h"
 
 Band::Band() : _title(), _description(), _albums() {}
-
+//TODO: передача по значению?
 Band::Band(std::string title, std::string description)
 	: _title(title), _description(description), _albums() {}
-
+//TODO: передача по значению?
 Song* Band::FindSong(std::string songTitle)
 {
 	for (int i = 0; i < _albums.size(); ++i)
@@ -82,16 +82,19 @@ Song* Band::GetAllSong(Genre songGenre, int& allSongsCount)
 	return result;
 }
 
+//TODO: передача по значению?
 void Band::SetTitle(std::string title)
 {
 	_title = title;
 }
 
+//TODO: передача по значению?
 void Band::SetDesctiprion(std::string description)
 {
 	_description = description;
 }
 
+//TODO: передача по значению?
 void Band::AddAlbum(Album album)
 {
 	if (std::find(_albums.begin(), _albums.end(), album) == _albums.end())
@@ -104,6 +107,7 @@ void Band::AddAlbum(Album album)
 	}
 }
 
+//TODO: передача по значению?
 void Band::RemoveAlbum(Album album)
 {
 	_albums.erase(std::find(_albums.begin(), _albums.end(), album));

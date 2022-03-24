@@ -1,7 +1,8 @@
-#include "Flight.h"
+﻿#include "Flight.h"
 
 Flight::Flight() : _id(0), _departure(""), _destination(""), _departureTime(), _destinationTime() {}
 
+//TODO: передача строк по значению?
 Flight::Flight(int id, std::string departure, std::string destination, Time departureTime, Time destinationTime)
 {
 	SetId(id);
@@ -17,6 +18,7 @@ int Flight::GetFlightTimeMinutes()
 	Time destination = GetDestinationTime();
 
 	int result = 0;
+	//TODO: Правильнее в константы
 	result = destination.GetDay() * 24 * 60 + destination.GetHour() * 60 + destination.GetMinute();
 	result -= departure.GetDay() * 24 * 60 + departure.GetHour() * 60 + departure.GetMinute();
 

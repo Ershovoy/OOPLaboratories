@@ -1,14 +1,15 @@
-#include "Album.h"
+﻿#include "Album.h"
 
 Album::Album() : _title(""), _releaseYear(0), _songs() {}
-
+//TODO: передача строк по значению?
 Album::Album(std::string title, int releaseYear) : _title(title), _releaseYear(releaseYear) {}
-
+//TODO: передача строк по значению?
 Album::Album(std::string title, int releaseYear, std::vector<Song> songs)
 	: _title(title), _releaseYear(releaseYear), _songs(songs) {}
 
 bool Album::operator==(const Album& album)
 {
+	//TODO: возвращать дальше
 	if (_title == album._title && _releaseYear == album._releaseYear)
 	{
 		return true;
@@ -26,6 +27,7 @@ void Album::SetReleaseYear(int releaseYear)
 	_releaseYear = releaseYear;
 }
 
+//TODO: передача по значению?
 void Album::AddSong(Song song)
 {
 	if (std::find(_songs.begin(), _songs.end(), song) == _songs.end())
@@ -38,6 +40,7 @@ void Album::AddSong(Song song)
 	}
 }
 
+//TODO: передача по значению?
 void Album::RemoveSong(Song song)
 {
 	_songs.erase(std::find(_songs.begin(), _songs.end(), song));

@@ -1,11 +1,12 @@
-#include "IOBook.h"
+﻿#include "IOBook.h"
 
 void DemoBook()
 {
 	constexpr int BOOK_COUNT = 5;
 	Book books[BOOK_COUNT];
-	books[0].Title = "��� ��������� �� ���";
-	books[0].Authors = new std::string("������ ���������");
+	//TODO: UTF8?
+	books[0].Title = "Íàä ïðîïàñòüþ âî ðæè";
+	books[0].Authors = new std::string("Äæåðîì Ñýëèíäæåð");
 	books[0].AutorCount = 1;
 	books[0].ReleaseYear = 1951;
 	books[0].Pages = 213;
@@ -38,6 +39,7 @@ void ReadBookFromConsole(Book& book)
 {
 	std::cout << "Enter title of the book: ";
 	std::cin >> book.Title;
+	//TODO: RSDN
 	book.ReleaseYear = GetInteger(1, 2022, "Enter release year: ", "Release year must be positive number.\n");
 	book.Pages = GetInteger(1, INT_MAX, "Enter count of pages: ", "Count of pages must be positive number.\n");
 	book.AutorCount = GetInteger(1, 10, "Enter number of authors: ", "Number of authors must be in range [1, 10].\n");
@@ -60,6 +62,7 @@ void WriteBookToConsole(const Book& book)
 	std::cout << ". " << book.Title << ". " << book.ReleaseYear << ". " << book.Pages << "c.\n";
 }
 
+//TODO: передача строк по значению?
 int GetInteger(std::string prompt, std::string error)
 {
 	std::cout << prompt;
@@ -86,6 +89,7 @@ int GetInteger(std::string prompt, std::string error)
 	}
 }
 
+//TODO: передача строк по значению?
 int GetInteger(int low, int high, std::string prompt, std::string error)
 {
 	std::cout << prompt;
