@@ -2,7 +2,7 @@
 
 #include <string>
 #include <iostream>
-//TODO: UTF8?
+//TODO: + UTF8?
 //TODO: Doxygen?
 // 2.2.2 Создание структур
 // Задача: Описать структуру прямоугольник
@@ -48,7 +48,4 @@ int FindRectangleWithMaxLength(Rectangle* rectangles, int count);
 // Написать функция поиска прямоугольника с максимальной площадью
 int FindRectangleWithMaxArea(Rectangle* rectangles, int count);
 
-void AssertArray(int count)
-{
-	if(count < 0) throw std::exception("Exception: Negative array length");
-}
+void AssertArray(int count);

@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-//TODO: UTF8?
+//TODO: + UTF8?
 //TODO: Doxygen?
 // 2.2.8 Перечисления
 
@@ -23,7 +23,7 @@ void DemoEnums();
 
 // Задача 3:
 // Написать функцию вывода цвет в консоль
-// TODO: грамошибка +
+// TODO: + грамошибка
 void WriteColor(Color color);
 
 // Задача 4:

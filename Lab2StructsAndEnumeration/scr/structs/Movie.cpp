@@ -1,7 +1,7 @@
 ﻿#include "Movie.h"
 
-//TODO: передача строк по значению?
-Movie* MakeMovie(std::string title, std::string genre, int year, double rate)
+//TODO: + передача строк по значению?
+Movie* MakeMovie(const std::string& title, const std::string& genre, int year, double rate)
 {
 	Movie* movie = new Movie();
 	movie->Title = title;
@@ -11,7 +11,7 @@ Movie* MakeMovie(std::string title, std::string genre, int year, double rate)
 	return movie;
 }
 
-//TODO: Это же не копирование, а просто присваивание указателя.
+//TODO: ? Это же не копирование, а просто присваивание указателя.
 Movie* CopyMovie(Movie& movie)
 {
 	Movie* copiedMovie = new Movie();
@@ -21,9 +21,16 @@ Movie* CopyMovie(Movie& movie)
 
 void DemoMovie()
 {
-	Movie* movie1 = MakeMovie("Die Hard", "Action", 1988, 8.0);
-	Movie* movie2 = MakeMovie("Matrix", "Fantastic", 1999, 8.5);
-	Movie* movie3 = MakeMovie("1+1", "Comedy", 2012, 8.8);
+	std::string movie1Title = "Die Hard";
+	std::string movie1Genre = "Action";
+	std::string movie2Title = "Matrix";
+	std::string movie2Genre = "Fantastic";
+	std::string movie3Title = "1+1";
+	std::string movie3Genre = "Comedy";
+
+	Movie* movie1 = MakeMovie(movie1Title, movie1Genre, 1988, 8.0);
+	Movie* movie2 = MakeMovie(movie2Title, movie2Genre, 1999, 8.5);
+	Movie* movie3 = MakeMovie(movie3Title, movie3Genre, 2012, 8.8);
 
 	Movie* copiedMovie1 = CopyMovie(*movie1);
 	Movie* copiedMovie2 = CopyMovie(*movie2);

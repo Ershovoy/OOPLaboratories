@@ -4,7 +4,7 @@
 #include <string>
 
 //TODO: Doxygen?
-//TODO: UTF8?
+//TODO: + UTF8?
 // 2.2.2 Создание структур
 // Задача: Описать структуру фильм
 
@@ -20,7 +20,7 @@ struct Movie
 
 // Задание 1:
 // Создать функция конструктор для выше описанной структуры
-Movie* MakeMovie(std::string title, std::string genre, int year, double rate);
+Movie* MakeMovie(const std::string& title, const std::string& genre, int year, double rate);
 
 // Задание 2:
 // Написать функцию копирования

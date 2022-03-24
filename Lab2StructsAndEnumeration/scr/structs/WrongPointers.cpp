@@ -8,17 +8,17 @@ void WrongPointers()
 	flight.MinutesFlightTime = 100;
 
 	Movie movie;
-	//TODO: UTF8?
-	// TODO: интересный выбор
+	//TODO: + UTF8?
+	// TODO: ? интересный выбор
 	movie.Title = "Mulholland Dr.";
 	movie.Genre = "thriller";
 	movie.Rating = 7.649;
 	movie.ReleaseYear = 2001;
 
 	//TODO: RSDN
-	Flight* pFlight = &flight;
-	Movie* pMovie = &movie;
+	Flight* pointerToFlight = &flight;
+	Movie* pointerToMovie = &movie;
 
-	//pFlight = pMovie;
-	//pFlgiht = &movie;
+	//pointerToFlight = pointerToMovie;
+	//pointerToFlight = &pointerToMovie;
 }

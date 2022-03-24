@@ -1,6 +1,10 @@
 ﻿#pragma once
 
-//TODO: Doxygen?
+//TODO: + Doxygen?
+
+/// <summary>
+/// Перечисление используемое для задания цвета.
+/// </summary>
 enum class Color
 {
 	Red,

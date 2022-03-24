@@ -16,13 +16,15 @@ void DemoEnums()
 	colorArray[4] = Color::Yellow;
 	colorArray[5] = ReadColor();
 
-	//TODO: RSDN
-	std::cout << "Count of Red color in the array: " << CountRed(colorArray, arraySize) << '\n';
-	std::cout << "Count of Purple color in the array: " << CountColor(colorArray, arraySize, Color::Purple) << '\n';
+	//TODO: + RSDN
+	std::cout << "Count of Red color in the array: " 
+		<< CountRed(colorArray, arraySize) << '\n';
+	std::cout << "Count of Purple color in the array: " 
+		<< CountColor(colorArray, arraySize, Color::Purple) << '\n';
 }
 
-//TODO: UTF8?
-// TODO: грамошибка +
+//TODO: + UTF8?
+// TODO: + грамошибка
 void WriteColor(Color color)
 {
 	switch (color)
@@ -71,7 +73,7 @@ Color ReadColor()
 	std::string colorName;
 	std::cin >> colorName;
 
-	//TODO: switch-case
+	//TODO: ? switch-case
 	if (colorName == "Blue")
 	{
 		return Color::Blue;

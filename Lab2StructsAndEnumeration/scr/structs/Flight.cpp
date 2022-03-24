@@ -15,11 +15,11 @@ void DemoFlight()
 	std::cout << "Enter flight flight time in minutes: ";
 	std::cin >> flight2.MinutesFlightTime;
 
-	//TODO: bug?
+	//TODO: + bug?
 	Flight flight3;
-	flight1.Departure = "Novosibirsk";
-	flight1.Destination = "Tomsk";
-	flight1.MinutesFlightTime = 35;
+	flight3.Departure = "Novosibirsk";
+	flight3.Destination = "Tomsk";
+	flight3.MinutesFlightTime = 35;
 
 	const int flightCount = 3;
 	Flight flight[flightCount];
@@ -38,49 +38,49 @@ void DemoFlight()
 
 void DemoDynamicFlight()
 {
-	//TODO: RSDN
-	Flight* pFlight = new Flight;
-	pFlight->Departure = "Petersburg";
-	pFlight->Destination = "Moscoy";
-	pFlight->MinutesFlightTime = 50;
+	//TODO: + RSDN
+	Flight* flight = new Flight;
+	flight->Departure = "Petersburg";
+	flight->Destination = "Moscoy";
+	flight->MinutesFlightTime = 50;
 
-	std::cout << "Flight: " << pFlight->Departure << " -> " << pFlight->Destination
-		<< " for " << pFlight->MinutesFlightTime << " minutes.\n";
+	std::cout << "Flight: " << flight->Departure << " -> " << flight->Destination
+		<< " for " << flight->MinutesFlightTime << " minutes.\n";
 
-	delete pFlight;
+	delete flight;
 }
 
 void DemoDynamicFlights()
 {
 	const int flightCount = 4;
-	//TODO: RSDN
-	Flight* pFlights = new Flight[flightCount];
+	//TODO: + RSDN
+	Flight* flights = new Flight[flightCount];
 
-	pFlights[0].Departure = "Petersburg";
-	pFlights[0].Destination = "Moscoy";
-	pFlights[0].MinutesFlightTime = 50;
-	pFlights[1].Departure = "London";
-	pFlights[1].Destination = "Moscoy";
-	pFlights[1].MinutesFlightTime = 90;
-	pFlights[2].Departure = "Novosibirsk";
-	pFlights[2].Destination = "Tomst";
-	pFlights[2].MinutesFlightTime = 30;
-	pFlights[3].Departure = "Kemerovo";
-	pFlights[3].Destination = "Kiev";
-	pFlights[3].MinutesFlightTime = 50;
+	flights[0].Departure = "Petersburg";
+	flights[0].Destination = "Moscoy";
+	flights[0].MinutesFlightTime = 50;
+	flights[1].Departure = "London";
+	flights[1].Destination = "Moscoy";
+	flights[1].MinutesFlightTime = 90;
+	flights[2].Departure = "Novosibirsk";
+	flights[2].Destination = "Tomst";
+	flights[2].MinutesFlightTime = 30;
+	flights[3].Departure = "Kemerovo";
+	flights[3].Destination = "Kiev";
+	flights[3].MinutesFlightTime = 50;
 
-	std::cout << "Flight: " << pFlights[0].Departure << " -> " << pFlights[0].Destination
-		<< " for " << pFlights[0].MinutesFlightTime << " minutes.\n";
-	std::cout << "Flight: " << pFlights[1].Departure << " -> " << pFlights[1].Destination
-		<< " for " << pFlights[1].MinutesFlightTime << " minutes.\n";
-	std::cout << "Flight: " << pFlights[2].Departure << " -> " << pFlights[2].Destination
-		<< " for " << pFlights[2].MinutesFlightTime << " minutes.\n";
-	std::cout << "Flight: " << pFlights[3].Departure << " -> " << pFlights[3].Destination
-		<< " for " << pFlights[3].MinutesFlightTime << " minutes.\n";
+	std::cout << "Flight: " << flights[0].Departure << " -> " << flights[0].Destination
+		<< " for " << flights[0].MinutesFlightTime << " minutes.\n";
+	std::cout << "Flight: " << flights[1].Departure << " -> " << flights[1].Destination
+		<< " for " << flights[1].MinutesFlightTime << " minutes.\n";
+	std::cout << "Flight: " << flights[2].Departure << " -> " << flights[2].Destination
+		<< " for " << flights[2].MinutesFlightTime << " minutes.\n";
+	std::cout << "Flight: " << flights[3].Departure << " -> " << flights[3].Destination
+		<< " for " << flights[3].MinutesFlightTime << " minutes.\n";
 
-	FindShortestFlight(pFlights, flightCount);
-	// TODO: утечка памяти +
-	delete[] pFlights;
+	FindShortestFlight(flights, flightCount);
+	// TODO: + утечка памяти
+	delete[] flights;
 }
 
 void FindShortestFlight(Flight* flights, int count)
@@ -89,9 +89,8 @@ void FindShortestFlight(Flight* flights, int count)
 	{
 		throw std::exception("Exception: Negative array length");
 	}
-	//TODO: UTF8?
-	// TODO: сделать инверсию условия - сначала то +, 
-	// что сейчас делается в else с оператором return, затем приоритетная ветка
+	//TODO: + UTF8?
+	// TODO: + сделать инверсию условия - сначала то, что сейчас делается в else с оператором return, затем приоритетная ветка
 	if (count <= 0)
 	{
 		std::cout << "Array has no flights\n";
