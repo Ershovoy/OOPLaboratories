@@ -1,4 +1,4 @@
-#include "IOTime.h"
+﻿#include "IOTime.h"
 
 std::ostream& operator<<(std::ostream& outputStream, const Time& time)
 {

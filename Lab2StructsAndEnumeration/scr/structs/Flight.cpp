@@ -1,4 +1,4 @@
-#include "Flight.h"
+ï»¿#include "Flight.h"
 
 void DemoFlight()
 {
@@ -79,7 +79,7 @@ void DemoDynamicFlights()
 		<< " for " << pFlights[3].MinutesFlightTime << " minutes.\n";
 
 	FindShortestFlight(pFlights, flightCount);
-	// TODO: óòå÷êà ïàìÿòè +
+	// TODO: ÑƒÑ‚ÐµÑ‡ÐºÐ° Ð¿Ð°Ð¼ÑÑ‚Ð¸ +
 	delete[] pFlights;
 }
 
@@ -90,8 +90,8 @@ void FindShortestFlight(Flight* flights, int count)
 		throw std::exception("Exception: Negative array length");
 	}
 	//TODO: UTF8?
-	// TODO: ñäåëàòü èíâåðñèþ óñëîâèÿ - ñíà÷àëà òî +, 
-	// ÷òî ñåé÷àñ äåëàåòñÿ â else ñ îïåðàòîðîì return, çàòåì ïðèîðèòåòíàÿ âåòêà
+	// TODO: ÑÐ´ÐµÐ»Ð°Ñ‚ÑŒ Ð¸Ð½Ð²ÐµÑ€ÑÐ¸ÑŽ ÑƒÑÐ»Ð¾Ð²Ð¸Ñ - ÑÐ½Ð°Ñ‡Ð°Ð»Ð° Ñ‚Ð¾ +, 
+	// Ñ‡Ñ‚Ð¾ ÑÐµÐ¹Ñ‡Ð°Ñ Ð´ÐµÐ»Ð°ÐµÑ‚ÑÑ Ð² else Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð¾Ð¼ return, Ð·Ð°Ñ‚ÐµÐ¼ Ð¿Ñ€Ð¸Ð¾Ñ€Ð¸Ñ‚ÐµÑ‚Ð½Ð°Ñ Ð²ÐµÑ‚ÐºÐ°
 	if (count <= 0)
 	{
 		std::cout << "Array has no flights\n";

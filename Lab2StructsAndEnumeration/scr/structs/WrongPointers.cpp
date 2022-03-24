@@ -1,4 +1,4 @@
-#include "WrongPointers.h"
+п»ї#include "WrongPointers.h"
 
 void WrongPointers()
 {
@@ -9,7 +9,7 @@ void WrongPointers()
 
 	Movie movie;
 	//TODO: UTF8?
-	// TODO: интересный выбор
+	// TODO: РёРЅС‚РµСЂРµСЃРЅС‹Р№ РІС‹Р±РѕСЂ
 	movie.Title = "Mulholland Dr.";
 	movie.Genre = "thriller";
 	movie.Rating = 7.649;

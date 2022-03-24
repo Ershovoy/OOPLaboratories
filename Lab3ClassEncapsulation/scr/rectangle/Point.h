@@ -1,8 +1,8 @@
-#pragma once
+п»ї#pragma once
 
 //TODO: UTF8?
 //TODO: Doxygen?
-// UML диаграмма классов
+// UML РґРёР°РіСЂР°РјРјР° РєР»Р°СЃСЃРѕРІ
 // https://miro.com/app/board/uXjVOFkgw2A=/?invite_link_id=130325368379
 
 class Point

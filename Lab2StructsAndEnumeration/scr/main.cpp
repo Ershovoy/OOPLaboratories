@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 #include "structs/Rectangle.h"
 #include "structs/Flight.h"
@@ -9,7 +9,7 @@ int main()
 {
 	try
 	{
-		DemoEnums();
+		DemoEnums(); 
 	}
 	catch(std::exception e)
 	{

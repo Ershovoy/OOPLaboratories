@@ -1,10 +1,10 @@
-#pragma once
+п»ї#pragma once
 
 //TODO: Doxygen?
 //TODO: UTF8?
 
 // 3.4.1
-// Задание: Перечисление жанра песни Genre.
+// Р—Р°РґР°РЅРёРµ: РџРµСЂРµС‡РёСЃР»РµРЅРёРµ Р¶Р°РЅСЂР° РїРµСЃРЅРё Genre.
 
 enum class Genre
 {

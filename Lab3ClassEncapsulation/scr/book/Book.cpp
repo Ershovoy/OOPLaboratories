@@ -1,4 +1,4 @@
-#include "Book.h"
+﻿#include "Book.h"
 
 int FindBookByAuthor(Book* books, int booksCount, std::string author)
 {

@@ -5,7 +5,7 @@ Movie* MakeMovie(std::string title, std::string genre, int year, double rate)
 {
 	Movie* movie = new Movie();
 	movie->Title = title;
-	movie->Genre = genre;
+	movie->Genre = genre; 
 	movie->ReleaseYear = year;
 	movie->Rating = rate;
 	return movie;

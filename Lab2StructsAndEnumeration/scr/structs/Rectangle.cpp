@@ -1,4 +1,4 @@
-#include "Rectangle.h"
+п»ї#include "Rectangle.h"
 
 void DemoRectangle()
 {
@@ -91,12 +91,12 @@ void Exchange(Rectangle& rectangle1, Rectangle& rectangle2)
 }
 
 //TODO: UTF8?
-// TODO: функция должна возвращать индекс, а работа с консолью вне функций с обработкой данных +
+// TODO: С„СѓРЅРєС†РёСЏ РґРѕР»Р¶РЅР° РІРѕР·РІСЂР°С‰Р°С‚СЊ РёРЅРґРµРєСЃ, Р° СЂР°Р±РѕС‚Р° СЃ РєРѕРЅСЃРѕР»СЊСЋ РІРЅРµ С„СѓРЅРєС†РёР№ СЃ РѕР±СЂР°Р±РѕС‚РєРѕР№ РґР°РЅРЅС‹С… +
 int FindRectangleWithMaxLength(Rectangle* rectangles, int count)
 {
 	AssertArray(count);
 	//TODO: UTF8?
-	// TODO: инверсия условия +
+	// TODO: РёРЅРІРµСЂСЃРёСЏ СѓСЃР»РѕРІРёСЏ +
 	if (count <= 0)
 	{
 		std::cout << "No Rectangles in the array\n";
@@ -104,7 +104,7 @@ int FindRectangleWithMaxLength(Rectangle* rectangles, int count)
 	}
 
 	int greaterLength = 0;
-	for (int i = 0; i < count; ++i)
+	for(int i = 0; i < count; ++i)
 	{
 		if (rectangles[greaterLength].Length < rectangles[i].Length)
 		{
@@ -118,9 +118,9 @@ int FindRectangleWithMaxLength(Rectangle* rectangles, int count)
 int FindRectangleWithMaxArea(Rectangle* rectangles, int count)
 {
 	//TODO: UTF8?
-	// TODO: здесь и выше дублируются проверки внутри функции - вынести в отдельную функцию AssertArray() +
+	// TODO: Р·РґРµСЃСЊ Рё РІС‹С€Рµ РґСѓР±Р»РёСЂСѓСЋС‚СЃСЏ РїСЂРѕРІРµСЂРєРё РІРЅСѓС‚СЂРё С„СѓРЅРєС†РёРё - РІС‹РЅРµСЃС‚Рё РІ РѕС‚РґРµР»СЊРЅСѓСЋ С„СѓРЅРєС†РёСЋ AssertArray() +
 	AssertArray(count);
-	// TODO: инверсия условия +
+	// TODO: РёРЅРІРµСЂСЃРёСЏ СѓСЃР»РѕРІРёСЏ +
 	if (count <= 0)
 	{
 		std::cout << "No Rectangles in the array\n";

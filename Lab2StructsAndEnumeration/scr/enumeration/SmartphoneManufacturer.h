@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 //TODO: Doxygen?
 enum class SmartphoneManufacturer

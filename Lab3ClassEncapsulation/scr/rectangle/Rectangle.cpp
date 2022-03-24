@@ -1,4 +1,4 @@
-#include "Rectangle.h"
+﻿#include "Rectangle.h"
 
 Rectangle::Rectangle() : _centre(0, 0), _width(0), _length(0) {}
 
@@ -46,7 +46,7 @@ Point CalculateAverageCentrePosition(Rectangle* rectangles, int rectangleCount)
 		result.SetX(result.GetX() + rectangles->GetCentreX());
 		result.SetY(result.GetY() + rectangles->GetCentreY());
 	}
-	result.SetX(result.GetX() / rectangleCount);
+	result.SetX(result.GetX() / rectangleCount); 
 	result.SetY(result.GetY() / rectangleCount);
 	return result;
 }

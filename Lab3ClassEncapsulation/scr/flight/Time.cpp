@@ -1,4 +1,4 @@
-#include "Time.h"
+﻿#include "Time.h"
 
 Time::Time() : _year(0), _month(0), _day(0), _hour(0), _minute(0) {}
 

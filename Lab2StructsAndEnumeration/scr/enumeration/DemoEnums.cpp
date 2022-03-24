@@ -1,4 +1,4 @@
-#include "DemoEnums.h"
+п»ї#include "DemoEnums.h"
 
 void DemoEnums()
 {
@@ -22,7 +22,7 @@ void DemoEnums()
 }
 
 //TODO: UTF8?
-// TODO: грамошибка +
+// TODO: РіСЂР°РјРѕС€РёР±РєР° +
 void WriteColor(Color color)
 {
 	switch (color)
