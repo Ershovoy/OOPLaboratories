@@ -18,7 +18,7 @@ bool Song::operator==(const Song& song)
 	return false;
 }
 
-//TODO: передача по значению?
+//TODO: - передача по значению?
 void Song::SetTitle(std::string title)
 {
 	_title = title;

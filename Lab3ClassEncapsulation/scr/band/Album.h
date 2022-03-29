@@ -4,17 +4,31 @@
 
 #include <vector>
 
-//TODO: Doxygen?
-//TODO: UTF8?
+//TODO: + Doxygen?
+//TODO: + UTF8?
 
 // 3.4.1
 // Задание: Класс Album с указанием названия, года выпуска и массива песен,
 // а также с соответствующими конструкторами и сеттерами.
 
+/// <summary>
+/// Албом
+/// </summary>
 class Album
 {
+	/// <summary>
+	/// Название альбома
+	/// </summary>
 	std::string _title;
+
+	/// <summary>
+	/// Год выпуска альбома
+	/// </summary>
 	int _releaseYear;
+
+	/// <summary>
+	/// Песни в альбоме
+	/// </summary>
 	std::vector<Song> _songs;
 
 public:

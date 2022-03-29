@@ -10,8 +10,8 @@ int main()
 		//DemoFlightWithTime();
 		//DemoRectangleWithPoint();
 	}
-	//TODO: передача по значению?
-	catch (std::exception exception)
+	//TODO: + передача по значению?
+	catch (const std::exception& exception)
 	{
 		std::cerr << exception.what() << '\n';
 	}

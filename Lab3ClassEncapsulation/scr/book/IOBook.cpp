@@ -4,9 +4,9 @@ void DemoBook()
 {
 	constexpr int BOOK_COUNT = 5;
 	Book books[BOOK_COUNT];
-	//TODO: UTF8?
-	books[0].Title = "Íàä ïðîïàñòüþ âî ðæè";
-	books[0].Authors = new std::string("Äæåðîì Ñýëèíäæåð");
+	//TODO: + UTF8?
+	books[0].Title = "Над пропастью во ржи";
+	books[0].Authors = new std::string("Джером Сэлинджер");
 	books[0].AutorCount = 1;
 	books[0].ReleaseYear = 1951;
 	books[0].Pages = 213;
@@ -39,10 +39,13 @@ void ReadBookFromConsole(Book& book)
 {
 	std::cout << "Enter title of the book: ";
 	std::cin >> book.Title;
-	//TODO: RSDN
-	book.ReleaseYear = GetInteger(1, 2022, "Enter release year: ", "Release year must be positive number.\n");
-	book.Pages = GetInteger(1, INT_MAX, "Enter count of pages: ", "Count of pages must be positive number.\n");
-	book.AutorCount = GetInteger(1, 10, "Enter number of authors: ", "Number of authors must be in range [1, 10].\n");
+	//TODO: + RSDN
+	book.ReleaseYear = GetInteger(1, 2022, "Enter release year: ",
+		"Release year must be positive number.\n");
+	book.Pages = GetInteger(1, INT_MAX, "Enter count of pages: ",
+		"Count of pages must be positive number.\n");
+	book.AutorCount = GetInteger(1, 10, "Enter number of authors: "
+		"Number of authors must be in range [1, 10].\n");
 	book.Authors = new std::string[book.AutorCount];
 	std::cout << "Enter authors:\n";
 	for (int i = 0; i < book.AutorCount; ++i)
@@ -62,8 +65,8 @@ void WriteBookToConsole(const Book& book)
 	std::cout << ". " << book.Title << ". " << book.ReleaseYear << ". " << book.Pages << "c.\n";
 }
 
-//TODO: передача строк по значению?
-int GetInteger(std::string prompt, std::string error)
+//TODO: + передача строк по значению?
+int GetInteger(const std::string& prompt, const std::string& error)
 {
 	std::cout << prompt;
 	while (true)
@@ -89,8 +92,8 @@ int GetInteger(std::string prompt, std::string error)
 	}
 }
 
-//TODO: передача строк по значению?
-int GetInteger(int low, int high, std::string prompt, std::string error)
+//TODO: + передача строк по значению?
+int GetInteger(int low, int high, const std::string& prompt, const std::string& error)
 {
 	std::cout << prompt;
 	while (true)

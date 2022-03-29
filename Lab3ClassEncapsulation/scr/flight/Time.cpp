@@ -45,6 +45,12 @@ bool Time::operator>(const Time& right)
 	return !(*this < right);
 }
 
+int Time::ToMinute()
+{
+	return (((GetYear() * MONTH_PER_YEAR + GetMonth()) * DAY_PER_MONTH 
+		+ GetDay()) * HOUR_PER_DAY + GetHour()) * MINUTE_PER_HOUR + GetMinute();
+}
+
 void Time::SetYear(int year)
 {
 	if (year < 0)

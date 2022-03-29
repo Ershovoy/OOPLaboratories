@@ -1,14 +1,26 @@
 ﻿#pragma once
 
-//TODO: UTF8?
-//TODO: Doxygen?
+//TODO: + UTF8?
+//TODO: + Doxygen?
 // UML диаграмма классов
 // https://miro.com/app/board/uXjVOFkgw2A=/?invite_link_id=130325368379
 
+/// <summary>
+/// Класс описывающий точку на двумерной плоскости
+/// </summary>
 class Point
 {
-	//TODO: RSDN
-	float _x, _y;
+	//TODO: + RSDN
+	
+	/// <summary>
+	/// Координата точки по X
+	/// </summary>
+	float _x;
+
+	/// <summary>
+	/// Координата точки по Y
+	/// </summary>
+	float _y;
 
 public:
 	Point();

@@ -5,27 +5,55 @@
 #include <string>
 #include <exception>
 
-//TODO: UTF8?
-//TODO: Doxygen?
+//TODO: + UTF8?
+//TODO: + Doxygen?
 
 // 3.3.8
 // Задание: Создать класс авиарейс с соответсвующими конструкторами, и сеттерами, и проверкой данных.
 
+/// <summary>
+/// Класс описывающий авиарейс
+/// </summary>
 class Flight
 {
+	/// <summary>
+	/// Уникальный номер авиарейса
+	/// </summary>
 	int _id;
+
+	/// <summary>
+	/// Место отправления
+	/// </summary>
 	std::string _departure;
+
+	/// <summary>
+	/// Место прибытия
+	/// </summary>
 	std::string _destination;
+
+	/// <summary>
+	/// Время отправления
+	/// </summary>
 	Time _departureTime;
+
+	/// <summary>
+	/// Время прибытия
+	/// </summary>
 	Time _destinationTime;
 
 public:
 	Flight();
-	//TODO: RSDN
-	Flight(int id, std::string departure, std::string destination, Time departureTime, Time destinationTime);
+	//TODO: + RSDN
+	Flight(int id, std::string departure, std::string destination,
+		Time departureTime, Time destinationTime);
 
 	// 3.3.11, 3.5.4
 	// Задание: Создать метод возвращающий время полёта авиарейса в минутах.
+
+	/// <summary>
+	/// Вычислить время полёта в минутах
+	/// </summary>
+	/// <returns>Время полёта в минута</returns>
 	int GetFlightTimeMinutes();
 
 	void SetId(int id);
