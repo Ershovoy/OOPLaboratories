@@ -15,9 +15,9 @@ void WrongPointers()
 	movie.Rating = 7.649;
 	movie.ReleaseYear = 2001;
 
-	//TODO: RSDN
-	Flight* pointerToFlight = &flight;
-	Movie* pointerToMovie = &movie;
+	//TODO: + RSDN
+	Flight* flight2 = &flight;
+	Movie* movie2 = &movie;
 
 	//pointerToFlight = pointerToMovie;
 	//pointerToFlight = &pointerToMovie;

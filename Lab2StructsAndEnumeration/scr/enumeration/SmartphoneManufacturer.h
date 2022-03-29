@@ -1,6 +1,10 @@
 ﻿#pragma once
 
-//TODO: Doxygen?
+//TODO: + Doxygen?
+
+/// <summary>
+/// Производитель телефона
+/// </summary>
 enum class SmartphoneManufacturer
 {
 	Apple,

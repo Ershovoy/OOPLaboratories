@@ -1,6 +1,10 @@
 ﻿#pragma once
 
-//TODO: Doxygen?
+//TODO: + Doxygen?
+
+/// <summary>
+/// Форма в которой проходит обучение
+/// </summary>
 enum class EducationForm
 {
 	Iternal,
