@@ -11,9 +11,9 @@
 class CollisionManager 
 {
 public:
+	CollisionManager() = delete;
+
 	static bool IsCollision(const Rectangle& first, const Rectangle& second);
 	static bool IsCollision(const Ring& first, const Ring& second);
-
-	CollisionManager() = delete;
 };
 

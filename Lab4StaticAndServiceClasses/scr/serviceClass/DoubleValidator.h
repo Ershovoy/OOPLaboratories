@@ -10,12 +10,12 @@
 class DoubleValidator
 {
 public:
+	DoubleValidator() = delete;
+
 	static bool IsPositiveValue(double value);
 	static bool IsValueInRange(double value, double min, double max);
 
 	static void AssertPositiveValue(double value);
 	static void AssertValueInRange(double value, double min, double max);
-
-	DoubleValidator() = delete;
 };
 
