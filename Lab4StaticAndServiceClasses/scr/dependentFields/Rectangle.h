@@ -5,10 +5,25 @@
 
 #include <exception>
 
+/// <summary>
+/// Класс описывающий прямоугольник с заданными сторонами,
+///	композирующий класс Point
+/// </summary>
 class Rectangle
 {
+	/// <summary>
+	/// Ширина прямоугольника
+	/// </summary>
 	float _width;
+
+	/// <summary>
+	/// Длина прямоугольника
+	/// </summary>
 	float _length;
+	
+	/// <summary>
+	/// Центр прямоугольника
+	/// </summary>
 	Point _centre;
 
 public:

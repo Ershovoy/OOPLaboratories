@@ -1,8 +1,18 @@
 ﻿#pragma once
 
+/// <summary>
+/// Класс описывающий точку на двумерной плоскости
+/// </summary>
 class Point
 {
+	/// <summary>
+	/// Координата точки по X
+	/// </summary>
 	float _x;
+
+	/// <summary>
+	/// Координата точки по Y
+	/// </summary>
 	float _y;
 
 public:
