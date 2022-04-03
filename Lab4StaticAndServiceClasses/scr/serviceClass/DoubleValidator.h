@@ -15,5 +15,7 @@ public:
 
 	static void AssertPositiveValue(double value);
 	static void AssertValueInRange(double value, double min, double max);
+
+	DoubleValidator() = delete;
 };
 
