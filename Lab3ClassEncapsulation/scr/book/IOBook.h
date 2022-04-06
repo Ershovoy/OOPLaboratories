@@ -3,7 +3,6 @@
 #include "Book.h"
 
 #include <iostream>
-//TODO: + Doxygen?
 
 /// <summary>
 /// Демонстрация работы со структурой Book

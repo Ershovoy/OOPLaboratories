@@ -1,9 +1,7 @@
 ﻿#include "Album.h"
 
 Album::Album() : _title(""), _releaseYear(0), _songs() {}
-//TODO: - передача строк по значению?
 Album::Album(std::string title, int releaseYear) : _title(title), _releaseYear(releaseYear) {}
-//TODO: - передача строк по значению?
 Album::Album(std::string title, int releaseYear, std::vector<Song> songs)
 	: _title(title), _releaseYear(releaseYear), _songs(songs) {}
 

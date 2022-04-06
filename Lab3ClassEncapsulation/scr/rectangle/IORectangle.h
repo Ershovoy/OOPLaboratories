@@ -4,8 +4,6 @@
 
 #include <iostream>
 
-//TODO: + Doxygen?
-
 /// <summary>
 /// Демонстрация работы класса прямоугольник
 /// </summary>

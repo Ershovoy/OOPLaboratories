@@ -27,6 +27,7 @@ class Rectangle
 	Point _centre;
 
 public:
+	// TODO: комментарии ко всему
 	Rectangle();
 	Rectangle(Point centre, float width, float length);
 	Rectangle(int centreX, int centreY, float width, float length);

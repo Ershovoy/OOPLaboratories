@@ -35,9 +35,10 @@ class Ring
 	/// Общее количество колец
 	/// </summary>
 	/// <returns></returns>
-	static int _allRingCount;
+	static int _allRingCount; // TODO: множественное число
 
 public:
+	// TODO: комментарии у конструкторов здесь и во всех остальных файлах
 	Ring();
 	Ring(const Point& centre, float innerRadius, float outerRadius);
 	Ring(float centreX, float centreY, float innerRadius, float outerRadius);

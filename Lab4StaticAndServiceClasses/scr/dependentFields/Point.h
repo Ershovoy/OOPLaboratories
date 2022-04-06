@@ -16,6 +16,7 @@ class Point
 	float _y;
 
 public:
+	// TODO: комментарии ко всему
 	Point();
 	Point(float x, float y);
 

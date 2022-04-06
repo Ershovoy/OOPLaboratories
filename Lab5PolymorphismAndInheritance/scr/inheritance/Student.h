@@ -29,6 +29,7 @@ class Student : public Person
 	void SetAdmissionYear(int admissionYear);
 
 public:
+	// TODO: не забыть здесь поменять названия локальных переменных
 	Student(const std::string& firstName,
 			const std::string& secondName,
 			const std::string& thirdName,

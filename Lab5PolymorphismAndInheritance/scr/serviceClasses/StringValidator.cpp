@@ -1,13 +1,16 @@
 ﻿#include "StringValidator.h"
 
+// TODO: валидатор по возможности должен быть отвязан от конкретной предметной области для возможности переиспользования
 void StringValidator::AssertNameLetters(const std::string& name)
 {
 	if (!('A' <= name[0] && name[0] <= 'Z'))
 	{
+		// TODO: нужно кидать не строки, а объекты класса exception()
 		throw "Error occured: First letter of name must be capital.";
 	}
 	if (!IsContainOnlyLetters(name))
 	{
+		// TODO: нужно кидать не строки, а объекты класса exception()
 		throw "Error occured: Name must have only letters.";
 	}
 }

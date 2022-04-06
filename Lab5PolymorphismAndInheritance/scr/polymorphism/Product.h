@@ -26,6 +26,7 @@ class Product
 	ProductCategory _category;
 
 public:
+	// TODO: здесь и во всех остальных классах добавить комментарии к конструкторам
 	Product(std::string title, float cost, ProductCategory category);
 
 	/// <summary>

@@ -19,6 +19,7 @@ class Song
 	/// </summary>
 	std::string _title;
 
+	// TODO: Seconds
 	/// <summary>
 	/// Продолжительность песни в секундах
 	/// </summary>

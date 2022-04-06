@@ -89,6 +89,7 @@ void Band::SetTitle(std::string title)
 }
 
 //TODO: - передача по значению?
+// TODO: грамошибка в названии. Исправить
 void Band::SetDesctiprion(std::string description)
 {
 	_description = description;

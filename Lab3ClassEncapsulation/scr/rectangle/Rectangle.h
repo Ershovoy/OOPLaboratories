@@ -4,8 +4,6 @@
 
 #include <exception>
 
-//TODO: + UTF8?
-//TODO: + Doxygen?
 // UML диаграмма классов
 // https://miro.com/app/board/uXjVOFkgw2A=/?invite_link_id=130325368379
 
@@ -15,8 +13,6 @@
 /// </summary>
 class Rectangle
 {
-	//TODO: + RSDN
-	
 	/// <summary>
 	/// Ширина прямоугольника
 	/// </summary>
@@ -33,6 +29,7 @@ class Rectangle
 	Point _centre;
 
 public:
+	// TODO: комментарии ко всему
 	Rectangle();
 	Rectangle(Point centre, float width, float length);
 	Rectangle(int centreX, int centreY, float width, float length);

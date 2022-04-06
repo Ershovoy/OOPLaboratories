@@ -20,6 +20,7 @@ void PercentDiscount::SetPercent(float percent)
 {
 		if (percent < 0.0f || 100.0f < percent)
 		{
+			// TODO: нужно кидать не строки, а объекты класса exception()
 			throw "Percent dicount must be in range: [0, 100].";
 		}
 		_percent = percent;

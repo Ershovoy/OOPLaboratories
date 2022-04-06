@@ -68,6 +68,7 @@ void WriteUserDemoToConsole()
 
 void WriteDiscountDemoToConsole()
 {
+	// TODO: утечка памяти
 	Product* product1 = new Product("LG49N000", 40'000, ProductCategory::TV);
 	Product* product2 = new Product("Q1", 2'000, ProductCategory::Micromax);
 	Product* product3 = new Product("M650", 8'000, ProductCategory::Pantum);

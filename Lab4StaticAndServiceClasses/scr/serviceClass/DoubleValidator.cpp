@@ -2,6 +2,7 @@
 
 bool DoubleValidator::IsPositiveValue(double value)
 {
+	// TODO: здесь и далее - просто return, не нужен if
 	if (value >= 0)
 	{
 		return true;

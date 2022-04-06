@@ -1,7 +1,5 @@
 ﻿#pragma once
 
-//TODO: + UTF8?
-//TODO: + Doxygen?
 // UML диаграмма классов
 // https://miro.com/app/board/uXjVOFkgw2A=/?invite_link_id=130325368379
 
@@ -23,6 +21,7 @@ class Point
 	float _y;
 
 public:
+	// TODO: комментарии ко всем методам
 	Point();
 	Point(float x, float y);
 

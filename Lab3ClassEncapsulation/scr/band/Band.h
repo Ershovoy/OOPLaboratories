@@ -4,8 +4,6 @@
 
 #include <string>
 #include <vector>
-//TODO: + UTF8?
-//TODO: + Doxygen?
 // 3.4.1
 // Задание: Создать класс банда, хранящий название, описание и написанные альбомы.
 
@@ -30,6 +28,7 @@ class Band
 	std::vector<Album> _albums;
 
 public:
+	// TODO: комментарии
 	Band();
 	Band(std::string title, std::string description);
 

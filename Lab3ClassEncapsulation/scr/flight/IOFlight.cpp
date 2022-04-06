@@ -2,6 +2,7 @@
 
 void DemoFlightWithTime()
 {
+	// TODO: утечка памяти
 	const int FLIGHT_COUNT = 5;
 	Flight* flights = new Flight[FLIGHT_COUNT];
 

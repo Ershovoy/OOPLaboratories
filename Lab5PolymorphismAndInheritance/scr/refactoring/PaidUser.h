@@ -16,6 +16,7 @@ class PaidUser : public User
 	std::vector<Post*> _posts;
 
 public:
+	// TODO: комментарий
 	PaidUser(const std::string& login, const std::string& password);
 
 	/// <summary>

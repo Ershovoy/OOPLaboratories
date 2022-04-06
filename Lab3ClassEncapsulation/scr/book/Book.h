@@ -29,6 +29,8 @@ struct Book
 	/// </summary>
 	std::string* Authors;
 
+	// TODO: грамошибка в слове
+	// TODO: "Авторы" - должно быть в множественном числе
 	/// <summary>
 	/// Количество авторов книги
 	/// </summary>

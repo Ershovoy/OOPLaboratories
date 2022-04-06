@@ -1,5 +1,6 @@
 ﻿#pragma once
 
+// TODO: сделать класс статическим
 /// <summary>
 /// Клас для генерации уникальных ID для класса Student
 /// </summary>
@@ -12,6 +13,7 @@ class StudentIdGenerator
 	/// </summary>
 	static unsigned int _lastId;
 
+	// TODO: сделать два метода - GetId() и IncrementID().
 public:
 	/// <summary>
 	/// Получить слудующий свободный ID

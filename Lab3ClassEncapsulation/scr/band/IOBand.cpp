@@ -32,7 +32,6 @@ void DemoBand()
 	std::cout << "\nSong with \"Song4\" title: ";
 	std::cout << band.FindSong("Song4")->GetTitle();
 
-	//TODO: + опечатка
 	std::cout << "\nAll songs in third album:\n";
 	Album* album = band.FindAlbum(band.FindSong("Song8"));
 	for (int i = 0; i < album->GetSongCount(); ++i)

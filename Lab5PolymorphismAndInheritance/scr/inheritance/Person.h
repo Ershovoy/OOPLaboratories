@@ -14,17 +14,20 @@ class Person
 	/// </summary>
 	std::string _firstName;
 
+	// TODO: Surname. Переименовать здесь и везде ниже
 	/// <summary>
 	/// Фамилия человека
 	/// </summary>
 	std::string _secondName;
 
+	// TODO: Patronymic. Переименовать здесь и везде ниже
 	/// <summary>
 	/// Отчество человека
 	/// </summary>
 	std::string _thirdName;
 
 public:
+	// TODO: комментарий
 	Person(const std::string& firstName, 
 		   const std::string& secondName, 
 		   const std::string& thirdName);

@@ -37,6 +37,7 @@ void WriteDiscountDifferenceToConsole(DiscountBase* discount,
 {
 	WriteProductCategoryToConsole(product->GetCategory());
 	std::cout << " "
+		// TODO: код лучше форматировать так, чтобы подпись к значению и само значение были на одной строке, а не на разных
 	   		  << product->GetTitle() << "\tOld cost: "
 			  << product->GetCost() << "\tNew cost: "
 			  << discount->CalculateDiscount(product) << '\n';

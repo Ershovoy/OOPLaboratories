@@ -4,8 +4,6 @@
 
 #include <ostream>
 
-//TODO: + Doxygen?
-
 /// <summary>
 /// Перегрузка оператора вывода для вывод полей класса Time в консоль
 /// </summary>

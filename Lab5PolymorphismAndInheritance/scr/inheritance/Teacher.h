@@ -13,6 +13,7 @@ class Teacher : public Person
 	std::string _position;
 
 public:
+	// TODO: переименовать локальные переменные
 	Teacher(const std::string& firstName,
 			const std::string& secondName,
 			const std::string& thirdName,

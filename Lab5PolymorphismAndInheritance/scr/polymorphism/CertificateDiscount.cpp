@@ -32,6 +32,7 @@ void CertificateDiscount::SetAmount(float amount)
 {
 	if (amount < 0.0f || 100.0f < amount)
 	{
+		// TODO: нужно кидать не строки, а объекты класса exception()
 		throw "Certificate dicount must be in range: [0, 100].";
 	}
 	_amount = amount;

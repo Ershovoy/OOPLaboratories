@@ -20,6 +20,7 @@ class DiscountBase
 	void SetCategory(ProductCategory category);
 
 protected:
+	// TODO: отсутствует комментарий
 	DiscountBase(ProductCategory category);
 
 public:

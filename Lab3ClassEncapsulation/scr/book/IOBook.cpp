@@ -4,7 +4,6 @@ void DemoBook()
 {
 	constexpr int BOOK_COUNT = 5;
 	Book books[BOOK_COUNT];
-	//TODO: + UTF8?
 	books[0].Title = "Над пропастью во ржи";
 	books[0].Authors = new std::string("Джером Сэлинджер");
 	books[0].AutorCount = 1;
@@ -65,7 +64,6 @@ void WriteBookToConsole(const Book& book)
 	std::cout << ". " << book.Title << ". " << book.ReleaseYear << ". " << book.Pages << "c.\n";
 }
 
-//TODO: + передача строк по значению?
 int GetInteger(const std::string& prompt, const std::string& error)
 {
 	std::cout << prompt;
@@ -92,7 +90,6 @@ int GetInteger(const std::string& prompt, const std::string& error)
 	}
 }
 
-//TODO: + передача строк по значению?
 int GetInteger(int low, int high, const std::string& prompt, const std::string& error)
 {
 	std::cout << prompt;

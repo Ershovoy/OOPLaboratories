@@ -49,6 +49,7 @@ void GeometricProgram::WriteCollisionToConsole(const Ring& first, const Ring& se
 void GeometricProgram::PushRingToVector(const Point& iCentre, float iInnerRadius,
 	float iOuterRadius, std::vector<Ring*>& oVector)
 {
+	// TODO: утечка памяти
 	try
 	{
 		Ring* ring = new Ring(iCentre, iInnerRadius, iOuterRadius);
