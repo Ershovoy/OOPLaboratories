@@ -13,9 +13,12 @@
 /// </summary>
 class CollisionManager 
 {
-public:
+	/// <summary>
+	/// Запрещает создать объект класса, т.к. он статический
+	/// </summary>
 	CollisionManager() = delete;
 
+public:
 	/// <summary>
 	/// Проверить столкнулись ли два прямоугольника между собой
 	/// </summary>

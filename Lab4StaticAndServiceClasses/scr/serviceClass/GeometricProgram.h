@@ -31,14 +31,16 @@ class GeometricProgram
 	/// </summary>
 	/// <param name="first">Первый прямоугольник</param>
 	/// <param name="second">Второй прямоугольник</param>
-	void WriteCollisionToConsole(const Rectangle& first, const Rectangle& second);
+	void WriteCollisionToConsole(const Rectangle& first, 
+								 const Rectangle& second);
 
 	/// <summary>
 	/// Вовод состояний колец и их столкновений в консоль
 	/// </summary>
 	/// <param name="first">Первое кольцо</param>
 	/// <param name="second">Второе кольцо</param>
-	void WriteCollisionToConsole(const Ring& first, const Ring& second);
+	void WriteCollisionToConsole(const Ring& first, 
+								const Ring& second);
 
 	/// <summary>
 	/// Создать и поместить кольцо в заданных массив
@@ -47,8 +49,10 @@ class GeometricProgram
 	/// <param name="iInnerRadius">Внутренний радиус нового кольца</param>
 	/// <param name="iOuterRadius">Внутренний радиус нового кольца</param>
 	/// <param name="oVector">Массив куда поместить созданное кольцо</param>
-	void PushRingToVector(const Point& iCentre, float iInnerRadius, 
-		float iOuterRadius, std::vector<Ring*>& oVector);
+	void PushRingToVector(const Point& iCentre, 
+						  float iInnerRadius, 
+						  float iOuterRadius, 
+						  std::vector<Ring*>& oVector);
 
 public:
 	/// <summary>

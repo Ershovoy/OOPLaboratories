@@ -1,29 +1,29 @@
 ﻿#include "Ring.h"
 
-int Ring::_allRingCount = 0;
+int Ring::_allRingsCount = 0;
 
 Ring::Ring() : _innerRadius(0), _outerRadius(0), _centre()
 {
-	_allRingCount += 1;
+	_allRingsCount += 1;
 }
 
 Ring::Ring(float centreX, float centreY, float innerRadius, float outerRadius)
 	: _centre(Point(centreX, centreY))
 {
 	SetRadius(innerRadius, outerRadius);
-	_allRingCount += 1;
+	_allRingsCount += 1;
 }
 
 Ring::Ring(const Point& centre, float innerRadius, float outerRadius) 
 	: _centre(centre)
 {
 	SetRadius(innerRadius, outerRadius);
-	_allRingCount += 1;
+	_allRingsCount += 1;
 }
 
 Ring::~Ring()
 {
-	_allRingCount -= 1;
+	_allRingsCount -= 1;
 }
 
 float Ring::CalculateArea()

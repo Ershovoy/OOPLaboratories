@@ -2,21 +2,13 @@
 
 bool DoubleValidator::IsPositiveValue(double value)
 {
-	// TODO: здесь и далее - просто return, не нужен if
-	if (value >= 0)
-	{
-		return true;
-	}
-	return false;
+	// TODO: + здесь и далее - просто return, не нужен if
+	return value >= 0;
 }
 
 bool DoubleValidator::IsValueInRange(double value, double min, double max)
 {
-	if (min <= value && value <= max)
-	{
-		return true;
-	}
-	return false;
+	return min <= value && value <= max;
 }
 
 void DoubleValidator::AssertPositiveValue(double value)
@@ -33,5 +25,4 @@ void DoubleValidator::AssertValueInRange(double value, double min, double max)
 	{
 		throw std::exception("Value must be in specific range.");
 	}
-	
 }

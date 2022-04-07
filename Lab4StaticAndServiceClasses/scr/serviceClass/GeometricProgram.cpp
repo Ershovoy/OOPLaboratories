@@ -18,7 +18,8 @@ void GeometricProgram::WriteRingToConsole(const Ring& ring)
 		<< "Outer Radius = " << ring.GetOuterRadius() << ");\n";
 }
 
-void GeometricProgram::WriteCollisionToConsole(const Rectangle& first, const Rectangle& second)
+void GeometricProgram::WriteCollisionToConsole(const Rectangle& first, 
+											   const Rectangle& second)
 {
 	WriteRectangleToConsole(first);
 	WriteRectangleToConsole(second);
@@ -32,7 +33,8 @@ void GeometricProgram::WriteCollisionToConsole(const Rectangle& first, const Rec
 	}
 }
 
-void GeometricProgram::WriteCollisionToConsole(const Ring& first, const Ring& second)
+void GeometricProgram::WriteCollisionToConsole(const Ring& first, 
+											   const Ring& second)
 {
 	WriteRingToConsole(first);
 	WriteRingToConsole(second);
@@ -46,10 +48,12 @@ void GeometricProgram::WriteCollisionToConsole(const Ring& first, const Ring& se
 	}
 }
 
-void GeometricProgram::PushRingToVector(const Point& iCentre, float iInnerRadius,
-	float iOuterRadius, std::vector<Ring*>& oVector)
+void GeometricProgram::PushRingToVector(const Point& iCentre, 
+								        float iInnerRadius,
+										float iOuterRadius, 
+										std::vector<Ring*>& oVector)
 {
-	// TODO: утечка памяти
+	// TODO: + утечка памяти. Ershov: В DemoRing() память освобождается.
 	try
 	{
 		Ring* ring = new Ring(iCentre, iInnerRadius, iOuterRadius);
