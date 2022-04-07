@@ -38,7 +38,7 @@ int main()
 				{
 					DemoCircle();
 				}
-				catch (std::exception e)
+				catch (const std::exception& e)
 				{
 					std::cerr << e.what() << "\n";
 				}
@@ -50,7 +50,7 @@ int main()
 				{
 					DemoFlight();
 				}
-				catch (std::exception e)
+				catch (const std::exception& e)
 				{
 					std::cerr << e.what() << "\n";
 				}
@@ -62,7 +62,7 @@ int main()
 				{
 					DemoMovie();
 				}
-				catch (std::exception e)
+				catch (const std::exception& e)
 				{
 					std::cerr << e.what() << "\n";
 				}
@@ -74,7 +74,7 @@ int main()
 				{
 					DemoRectangle();
 				}
-				catch (std::exception e)
+				catch (const std::exception& e)
 				{
 					std::cerr << e.what() << "\n";
 				}
@@ -86,7 +86,7 @@ int main()
 				{
 					DemoEnums();
 				}
-				catch (std::exception e)
+				catch (const std::exception& e)
 				{
 					std::cerr << e.what() << "\n";
 				}
