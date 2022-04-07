@@ -11,14 +11,14 @@
 /// <summary>
 /// Серверный класс по проверке столкновений использующийся для Rectangle и Ring
 /// </summary>
-class CollisionManager 
+static class CollisionManager 
 {
+public:
 	/// <summary>
 	/// Запрещает создать объект класса, т.к. он статический
 	/// </summary>
 	CollisionManager() = delete;
 
-public:
 	/// <summary>
 	/// Проверить столкнулись ли два прямоугольника между собой
 	/// </summary>

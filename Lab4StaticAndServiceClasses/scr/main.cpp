@@ -9,7 +9,6 @@ int main()
 		RingDemo = 1,
 		CollisionDemo
 	};
-
 	GeometricProgram program;
 
 	std::cout << "Enter 1 to run ring demo.\n";
