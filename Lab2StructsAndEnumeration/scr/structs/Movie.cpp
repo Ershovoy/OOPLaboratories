@@ -10,12 +10,15 @@ Movie* MakeMovie(const std::string& title, const std::string& genre, int year, d
 	movie->Rating = rate;
 	return movie;
 }
-
-//TODO: ? Это же не копирование, а просто присваивание указателя.
-Movie* CopyMovie(Movie& movie)
+//TODO: + Проверить утечку при присваивании по умолчанию
+//TODO: + Это же не копирование, а просто присваивание указателя.
+Movie* CopyMovie(const Movie& movie)
 {
+	//std::cout << &movie << '\n';
 	Movie* copiedMovie = new Movie();
+	//std::cout << copiedMovie << '\n';
 	*copiedMovie = movie;
+	//std::cout << copiedMovie << '\n';
 	return copiedMovie;
 }
 
@@ -41,7 +44,7 @@ void DemoMovie()
 	WriteMovie(*copiedMovie3);
 }
 
-void WriteMovie(Movie& movie)
+void WriteMovie(const Movie& movie)
 {
 	std::cout << "Title: " << movie.Title << '\n';
 	std::cout << "Genre: " << movie.Genre << '\n';

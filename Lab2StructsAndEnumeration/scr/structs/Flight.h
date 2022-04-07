@@ -28,6 +28,8 @@ struct Flight
 	int MinutesFlightTime;
 };
 
+void DemoFlight();
+
 // 2.2.6 Структуры и динамическая память
 
 // Задача 1:
@@ -54,4 +56,4 @@ void DemoDynamicFlights();
 /// </summary>
 /// <param name="flights">Указатель на первый объект массива Flight</param>
 /// <param name="count">Количество элементов в массиве</param>
-void FindShortestFlight(Flight* flights, int count);
+void FindShortestFlight(const Flight* flights, int count);

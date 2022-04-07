@@ -45,7 +45,7 @@ void DemoRectangle()
 	std::cout << "Adress of second pointer: " << pointerToFirstRectangle << '\n';
 }
 
-void WriteRectangle(Rectangle& rectangle)
+void WriteRectangle(const Rectangle& rectangle)
 {
 	//TODO: + RSDN
 	//TODO: + duplication
@@ -90,7 +90,7 @@ void Exchange(Rectangle& rectangle1, Rectangle& rectangle2)
 
 //TODO: + UTF8?
 // TODO: + функция должна возвращать индекс, а работа с консолью вне функций с обработкой данных
-int FindRectangleWithMaxLength(Rectangle* rectangles, int count)
+int FindRectangleWithMaxLength(const Rectangle* rectangles, int count)
 {
 	//TODO: + UTF8?
 	// TODO: + инверсия условия
@@ -108,7 +108,7 @@ int FindRectangleWithMaxLength(Rectangle* rectangles, int count)
 	return greaterLength;
 }
 
-int FindRectangleWithMaxArea(Rectangle* rectangles, int count)
+int FindRectangleWithMaxArea(const Rectangle* rectangles, int count)
 {
 	//TODO: + UTF8?
 	// TODO: + здесь и выше дублируются проверки внутри функции - вынести в отдельную функцию AssertArray()

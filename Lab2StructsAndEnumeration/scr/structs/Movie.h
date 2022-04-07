@@ -57,7 +57,7 @@ Movie* MakeMovie(const std::string& title, const std::string& genre, int year, d
 /// </summary>
 /// <param name="movie">Фильм описание которого надо скопировать</param>
 /// <returns>Указатель на созданный объект по подобию заданного</returns>
-Movie* CopyMovie(Movie& movie);
+Movie* CopyMovie(const Movie& movie);
 
 // Задание 2:
 // Создать функцию вызывающую выше описанные функции

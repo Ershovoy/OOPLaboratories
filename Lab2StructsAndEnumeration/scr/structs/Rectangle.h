@@ -87,7 +87,7 @@ void Exchange(Rectangle& rectangle1, Rectangle& rectangle2);
 /// <param name="rectangles">Указатель на первый элемент массива</param>
 /// <param name="count">Количество элементов в массиве</param>
 /// <returns>Индекс прямоугольника с максимальной длинной</returns>
-int FindRectangleWithMaxLength(Rectangle* rectangles, int count);
+int FindRectangleWithMaxLength(const Rectangle* rectangles, int count);
 
 // Задача 6:
 // Написать функция поиска прямоугольника с максимальной площадью
@@ -98,7 +98,7 @@ int FindRectangleWithMaxLength(Rectangle* rectangles, int count);
 /// <param name="rectangles">Указатель на первый элемент массива типа Rectangle</param>
 /// <param name="count">Количество элементов в массиве</param>
 /// <returns>Индекс прямоугольника с максимальной площадью в заданном массиве</returns>
-int FindRectangleWithMaxArea(Rectangle* rectangles, int count);
+int FindRectangleWithMaxArea(const Rectangle* rectangles, int count);
 
 /// <summary>
 /// Функция по проверке правильности количества элементов в массиве

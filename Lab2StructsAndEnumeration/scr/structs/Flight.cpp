@@ -83,7 +83,7 @@ void DemoDynamicFlights()
 	delete[] flights;
 }
 
-void FindShortestFlight(Flight* flights, int count)
+void FindShortestFlight(const Flight* flights, int count)
 {
 	if (count < 0)
 	{
@@ -108,6 +108,6 @@ void FindShortestFlight(Flight* flights, int count)
 
 	std::cout << "Flight with the shorter flight time:\n\t";
 	std::cout << "Flight: " << flights[shorterFlightIndex].Departure << " -> "
-		<< flights[shorterFlightIndex].Destination << " for "
-		<< flights[shorterFlightIndex].MinutesFlightTime << " minutes.\n";
+			  << flights[shorterFlightIndex].Destination << " for "
+			  << flights[shorterFlightIndex].MinutesFlightTime << " minutes.\n";
 }

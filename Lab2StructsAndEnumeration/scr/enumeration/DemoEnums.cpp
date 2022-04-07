@@ -73,7 +73,16 @@ Color ReadColor()
 	std::string colorName;
 	std::cin >> colorName;
 
-	//TODO: ? switch-case
+	//TODO: + switch-case. Попробывать массив char, вместо string (не работает).
+	/*const char* chars = colorName.c_str();
+	switch (chars)
+	{
+		case "Blue":
+		{
+			
+			break;
+		}
+	}*/
 	if (colorName == "Blue")
 	{
 		return Color::Blue;

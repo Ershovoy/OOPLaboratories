@@ -12,6 +12,12 @@ void DemoCircle()
 	Circle* copiedCircle3 = CopyCircle(circle3);
 	Circle* copiedCircle4 = CopyCircle(circle4);
 
+	std::cout << "Four copied circle:\n";
+	WriteCircleToConsole(copiedCircle1);
+	WriteCircleToConsole(copiedCircle2);
+	WriteCircleToConsole(copiedCircle3);
+	WriteCircleToConsole(copiedCircle4);
+
 	//TODO: + UTF8?
 	// TODO: + Освобождение памяти?
 	delete circle1;
@@ -20,7 +26,7 @@ void DemoCircle()
 	delete circle4;
 }
 
-Circle* MakeCircle(double x, double y, double radius, std::string color)
+Circle* MakeCircle(double x, double y, double radius, const std::string& color)
 {
 	Circle* circle = new Circle;
 	circle->X = x;
@@ -30,10 +36,22 @@ Circle* MakeCircle(double x, double y, double radius, std::string color)
 	return circle;
 }
 
-//TODO: ? Это же не копирование, а просто присваивание указателя.
-Circle* CopyCircle(Circle* cirlce)
+//TODO: + Это же не копирование, а просто присваивание указателя.
+Circle* CopyCircle(const Circle* cirlce)
 {
+	//std::cout << cirlce << '\n';
 	Circle* newCircle = new Circle;
+	//std::cout << newCircle << '\n';
 	*newCircle = *cirlce;
+	//std::cout << newCircle << '\n';
 	return newCircle;
+}
+
+void WriteCircleToConsole(const Circle* circle)
+{
+	std::cout << "Circle:\n";
+	std::cout << "\tCoordinate X: " << circle->X << '\n';
+	std::cout << "\tCoordinate Y: " << circle->Y << '\n';
+	std::cout << "\tRadius: " << circle->Radius << '\n';
+	std::cout << "\tColor: " << circle->Color << '\n';
 }
