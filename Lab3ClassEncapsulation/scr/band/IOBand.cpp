@@ -4,7 +4,7 @@ void DemoBand()
 {
 	Band band;
 	band.SetTitle("Band1");
-	band.SetDesctiprion("Description1");
+	band.SetDescription("Description1");
 
 	band.AddAlbum(Album("Album1", 1998));
 	band.GetAlbum(0)->AddSong(Song("Song1", Genre::Metal, 123));

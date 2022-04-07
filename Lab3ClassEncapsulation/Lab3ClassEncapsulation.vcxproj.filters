@@ -45,7 +45,7 @@
     <ClCompile Include="scr\flight\IOTime.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\band\Song.cpp">
+    <ClCompile Include="scr\song\Song.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="scr\band\Album.cpp">
@@ -86,10 +86,10 @@
     <ClInclude Include="scr\flight\IOTime.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\band\Genre.h">
+    <ClInclude Include="scr\song\Genre.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\band\Song.h">
+    <ClInclude Include="scr\song\Song.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="scr\band\Album.h">

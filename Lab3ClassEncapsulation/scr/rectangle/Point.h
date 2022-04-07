@@ -21,14 +21,42 @@ class Point
 	float _y;
 
 public:
-	// TODO: комментарии ко всем методам
+	// TODO: + комментарии ко всем методам
+
+	/// <summary>
+	/// Конструктор по умолчанию
+	/// </summary>
 	Point();
+
+	/// <summary>
+	/// Конструктор с параметрами
+	/// </summary>
+	/// <param name="x">Координата точки по X</param>
+	/// <param name="y">Координата точки по Y</param>
 	Point(float x, float y);
 
+	/// <summary>
+	/// Задать точке положение по координате X
+	/// </summary>
+	/// <param name="x">Координата X</param>
 	void SetX(float x);
+
+	/// <summary>
+	/// Задать точке положение по координате Y
+	/// </summary>
+	/// <param name="y">Координата Y</param>
 	void SetY(float y);
 
+	/// <summary>
+	/// Получить значение координаты точки по X
+	/// </summary>
+	/// <returns>Значение координаты по X</returns>
 	float GetX() const { return _x; }
+
+	/// <summary>
+	/// Получить значение координаты точки по Y
+	/// </summary>
+	/// <returns>Значение координаты по Y</returns>
 	float GetY() const { return _y; }
 };
 

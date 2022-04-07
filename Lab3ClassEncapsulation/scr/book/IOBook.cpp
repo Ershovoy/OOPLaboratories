@@ -6,7 +6,7 @@ void DemoBook()
 	Book books[BOOK_COUNT];
 	books[0].Title = "Над пропастью во ржи";
 	books[0].Authors = new std::string("Джером Сэлинджер");
-	books[0].AutorCount = 1;
+	books[0].AutorsCount = 1;
 	books[0].ReleaseYear = 1951;
 	books[0].Pages = 213;
 
@@ -43,11 +43,11 @@ void ReadBookFromConsole(Book& book)
 		"Release year must be positive number.\n");
 	book.Pages = GetInteger(1, INT_MAX, "Enter count of pages: ",
 		"Count of pages must be positive number.\n");
-	book.AutorCount = GetInteger(1, 10, "Enter number of authors: "
+	book.AutorsCount = GetInteger(1, 10, "Enter number of authors: "
 		"Number of authors must be in range [1, 10].\n");
-	book.Authors = new std::string[book.AutorCount];
+	book.Authors = new std::string[book.AutorsCount];
 	std::cout << "Enter authors:\n";
-	for (int i = 0; i < book.AutorCount; ++i)
+	for (int i = 0; i < book.AutorsCount; ++i)
 	{
 		std::cout << "Enter author[" << i << "]: ";
 		std::cin >> book.Authors[i];
@@ -57,7 +57,7 @@ void ReadBookFromConsole(Book& book)
 void WriteBookToConsole(const Book& book)
 {
 	std::cout << book.Authors[0];
-	for (int i = 1; i < book.AutorCount; ++i)
+	for (int i = 1; i < book.AutorsCount; ++i)
 	{
 		std::cout << ", " << book.Authors[i];
 	}

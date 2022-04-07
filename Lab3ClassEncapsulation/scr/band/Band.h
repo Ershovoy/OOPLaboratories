@@ -28,9 +28,19 @@ class Band
 	std::vector<Album> _albums;
 
 public:
-	// TODO: комментарии
+	// TODO: + комментарии
+	
+	/// <summary>
+	/// Конструктор по умолчанию без параметров
+	/// </summary>
 	Band();
-	Band(std::string title, std::string description);
+
+	/// <summary>
+	/// Конструктор по умолчанию
+	/// </summary>
+	/// <param name="title">Название группы</param>
+	/// <param name="description">Описание группы</param>
+	Band(const std::string& title, const std::string& description);
 
 	// 3.4.2
 	// Задание: Описать функцию по поиску песни группы по её названию.
@@ -40,7 +50,7 @@ public:
 	/// </summary>
 	/// <param name="songTitle">Название искомой песни</param>
 	/// <returns>Найденная песня или nullptr</returns>
-	Song* FindSong(std::string songTitle);
+	Song* FindSong(const std::string& songTitle);
 
 	// 3.4.3
 	// Задание: функцию по поиску альбома с заданной песней.
@@ -73,13 +83,52 @@ public:
 	/// <returns>Указатель на первый элемент массива</returns>
 	Song* GetAllSong(Genre songGenre, int& allSongsCount);
 
-	void SetTitle(std::string title);
-	void SetDesctiprion(std::string description);
-	void AddAlbum(Album album);
-	void RemoveAlbum(Album album);
+	/// <summary>
+	/// Задать название группе
+	/// </summary>
+	/// <param name="title">Новое название</param>
+	void SetTitle(const std::string& title);
 
-	std::string GetTitle() const { return _title; }
-	std::string GetDescription() const { return _description; }
+	/// <summary>
+	/// Задать описание группе
+	/// </summary>
+	/// <param name="description">Новое описание</param>
+	void SetDescription(const std::string& description);
+
+	/// <summary>
+	/// Добавить альбом новый альбом группы
+	/// </summary>
+	/// <param name="album">Новый альбом</param>
+	void AddAlbum(const Album& album);
+
+	/// <summary>
+	/// Удалить заданный альбом из списка группы
+	/// </summary>
+	/// <param name="album">Альбом который надо удалить</param>
+	void RemoveAlbum(const Album& album);
+
+	/// <summary>
+	/// Получить название группы
+	/// </summary>
+	/// <returns>Название</returns>
+	const std::string& GetTitle() const { return _title; }
+
+	/// <summary>
+	/// Получить описание группы
+	/// </summary>
+	/// <returns>Описание в виде строки</returns>
+	const std::string& GetDescription() const { return _description; }
+
+	/// <summary>
+	/// Получить количество написанных группой альбомов
+	/// </summary>
+	/// <returns>Количество альбомов</returns>
 	int GetAlbumCount() const { return _albums.size(); }
+
+	/// <summary>
+	/// Получить альбом по заданному индексу
+	/// </summary>
+	/// <param name="index">Индекс альбома</param>
+	/// <returns>Альбом группы по индексу</returns>
 	Album* GetAlbum(int index) { return &_albums.at(index); }
 };

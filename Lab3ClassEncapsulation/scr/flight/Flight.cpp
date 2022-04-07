@@ -1,9 +1,13 @@
 ﻿#include "Flight.h"
 
-Flight::Flight() : _id(0), _departure(""), _destination(""), _departureTime(), _destinationTime() {}
+Flight::Flight() : _id(0), _departure(""), 
+				   _destination(""), _departureTime(), 
+				   _destinationTime() {}
 
-//TODO: - передача строк по значению?
-Flight::Flight(int id, std::string departure, std::string destination, Time departureTime, Time destinationTime)
+//TODO: + передача строк по значению?
+Flight::Flight(int id, const std::string& departure,
+			   const std::string& destination, 
+			   Time departureTime, Time destinationTime)
 {
 	SetId(id);
 	SetDeparture(departure);
@@ -30,12 +34,12 @@ void Flight::SetId(int id)
 	_id = id;
 }
 
-void Flight::SetDeparture(std::string name)
+void Flight::SetDeparture(const std::string& name)
 {
 	_departure = name;
 }
 
-void Flight::SetDestination(std::string name)
+void Flight::SetDestination(const std::string& name)
 {
 	_destination = name;
 }

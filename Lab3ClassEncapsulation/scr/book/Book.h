@@ -2,7 +2,7 @@
 
 #include <string>
 //TODO: + Doxygen?
-//TODO: - Хранение строк по значению?
+//TODO: ? Хранение строк по значению?
 
 /// <summary>
 /// Структура описывающая книгу
@@ -29,12 +29,12 @@ struct Book
 	/// </summary>
 	std::string* Authors;
 
-	// TODO: грамошибка в слове
-	// TODO: "Авторы" - должно быть в множественном числе
+	// TODO: + грамошибка в слове
+	// TODO: + "Авторы" - должно быть в множественном числе
 	/// <summary>
 	/// Количество авторов книги
 	/// </summary>
-	int AutorCount;
+	int AutorsCount;
 };
 
 /// <summary>

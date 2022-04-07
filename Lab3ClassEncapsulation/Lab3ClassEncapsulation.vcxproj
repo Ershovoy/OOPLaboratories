@@ -160,7 +160,7 @@
     <ClCompile Include="scr\book\IOBook.cpp" />
     <ClCompile Include="scr\main.cpp" />
     <ClCompile Include="scr\flight\Time.cpp" />
-    <ClCompile Include="scr\band\Song.cpp" />
+    <ClCompile Include="scr\song\Song.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="scr\band\IOBand.h" />
@@ -169,14 +169,14 @@
     <ClInclude Include="scr\flight\IOTime.h" />
     <ClInclude Include="scr\flight\IOFlight.h" />
     <ClInclude Include="scr\flight\Flight.h" />
-    <ClInclude Include="scr\band\Genre.h" />
+    <ClInclude Include="scr\song\Genre.h" />
     <ClInclude Include="scr\rectangle\IORectangle.h" />
     <ClInclude Include="scr\rectangle\Rectangle.h" />
     <ClInclude Include="scr\rectangle\Point.h" />
     <ClInclude Include="scr\book\Book.h" />
     <ClInclude Include="scr\book\IOBook.h" />
     <ClInclude Include="scr\flight\Time.h" />
-    <ClInclude Include="scr\band\Song.h" />
+    <ClInclude Include="scr\song\Song.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

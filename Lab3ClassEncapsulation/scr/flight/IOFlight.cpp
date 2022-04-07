@@ -2,7 +2,7 @@
 
 void DemoFlightWithTime()
 {
-	// TODO: утечка памяти
+	// TODO: + утечка памяти
 	const int FLIGHT_COUNT = 5;
 	Flight* flights = new Flight[FLIGHT_COUNT];
 
@@ -42,6 +42,8 @@ void DemoFlightWithTime()
 		WriteFlightToConsole(current);
 		std::cout << "Flight time equal to: " << current.GetFlightTimeMinutes() << " in minutes.\n";
 	}
+
+	delete[] flights;
 }
 
 void WriteFlightToConsole(const Flight& flight)

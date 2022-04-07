@@ -45,7 +45,19 @@ class Time
 	static const int MONTH_PER_YEAR = 12;
 
 public:
+	/// <summary>
+	/// Конструктор по умолчанию без параментов
+	/// </summary>
 	Time();
+
+	/// <summary>
+	/// Конструктор с параментами
+	/// </summary>
+	/// <param name="year">Год</param>
+	/// <param name="month">Месяц</param>
+	/// <param name="day">День</param>
+	/// <param name="hour">Час</param>
+	/// <param name="minute">Минута</param>
 	Time(int year, int month, int day, int hour, int minute);
 
 	/// <summary>
@@ -68,15 +80,63 @@ public:
 	/// <returns>Количество минут</returns>
 	int ToMinute();
 
+	/// <summary>
+	/// Изменить текущий год на заданный
+	/// </summary>
+	/// <param name="year">Заданный год</param>
 	void SetYear(int year);
+
+	/// <summary>
+	/// Изменить текущий месяц на заданный
+	/// </summary>
+	/// <param name="month">Заданный месяц</param>
 	void SetMonth(int month);
+
+	/// <summary>
+	/// Изменить текущий день на заданный
+	/// </summary>
+	/// <param name="day">Заданный день</param>
 	void SetDay(int day);
+
+	/// <summary>
+	/// Изменить текущий час на заданный
+	/// </summary>
+	/// <param name="hour">Заданный час</param>
 	void SetHour(int hour);
+
+	/// <summary>
+	/// Изменить текущую минуту на заданную
+	/// </summary>
+	/// <param name="minute">Заданная минута</param>
 	void SetMinute(int minute);
 
+	/// <summary>
+	/// Получить текущий год
+	/// </summary>
+	/// <returns>Значение года</returns>
 	int GetYear() const { return _year; }
+
+	/// <summary>
+	/// Получить текущий месяц
+	/// </summary>
+	/// <returns>Значение месяца</returns>
 	int GetMonth() const { return _month; }
+
+	/// <summary>
+	/// Получить текущий день
+	/// </summary>
+	/// <returns>Значение дня</returns>
 	int GetDay() const { return _day; }
+
+	/// <summary>
+	/// Получить текущий час
+	/// </summary>
+	/// <returns>Значение часа</returns>
 	int GetHour() const { return _hour; }
+
+	/// <summary>
+	/// Получить текущие значение минут
+	/// </summary>
+	/// <returns>Значение минут</returns>
 	int GetMinute() const { return _minute; }
 };
