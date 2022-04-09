@@ -9,12 +9,8 @@ Album::Album(const std::string& title,
 
 bool Album::operator==(const Album& album)
 {
-	//TODO: ? возвращать дальше
-	if (_title == album._title && _releaseYear == album._releaseYear)
-	{
-		return true;
-	}
-	return false;
+	//TODO: + возвращать дальше
+	return (_title == album._title) && (_releaseYear == album._releaseYear);
 }
 
 void Album::SetTitle(const std::string& title)
