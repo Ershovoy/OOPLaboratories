@@ -18,10 +18,10 @@
     <ClCompile Include="scr\main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\inheritance\Person.cpp">
+    <ClCompile Include="scr\university\Person.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\inheritance\Student.cpp">
+    <ClCompile Include="scr\university\Student.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="scr\serviceClasses\StringValidator.cpp">
@@ -30,25 +30,25 @@
     <ClCompile Include="scr\serviceClasses\NumberValidator.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\inheritance\Teacher.cpp">
+    <ClCompile Include="scr\university\Teacher.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\inheritance\IOPerson.cpp">
+    <ClCompile Include="scr\university\IOPerson.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="scr\serviceClasses\StudentIdGenerator.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\refactoring\User.cpp">
+    <ClCompile Include="scr\users\User.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\refactoring\Post.cpp">
+    <ClCompile Include="scr\users\Post.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\refactoring\PaidUser.cpp">
+    <ClCompile Include="scr\users\PaidUser.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\refactoring\LoginSystem.cpp">
+    <ClCompile Include="scr\users\LoginSystem.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="scr\serviceClasses\UserIdGenerator.cpp">
@@ -57,27 +57,27 @@
     <ClCompile Include="scr\ProgramDemo.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\polymorphism\Product.cpp">
+    <ClCompile Include="scr\discountSystem\Product.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\polymorphism\DiscountBase.cpp">
+    <ClCompile Include="scr\discountSystem\DiscountBase.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\polymorphism\PercentDiscount.cpp">
+    <ClCompile Include="scr\discountSystem\PercentDiscount.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\polymorphism\CertificateDiscount.cpp">
+    <ClCompile Include="scr\discountSystem\CertificateDiscount.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="scr\polymorphism\IOProduct.cpp">
+    <ClCompile Include="scr\discountSystem\IOProduct.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="scr\inheritance\Person.h">
+    <ClInclude Include="scr\university\Person.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\inheritance\Student.h">
+    <ClInclude Include="scr\university\Student.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="scr\serviceClasses\StringValidator.h">
@@ -86,25 +86,25 @@
     <ClInclude Include="scr\serviceClasses\NumberValidator.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\inheritance\Teacher.h">
+    <ClInclude Include="scr\university\Teacher.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\inheritance\IOPerson.h">
+    <ClInclude Include="scr\university\IOPerson.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="scr\serviceClasses\StudentIdGenerator.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\refactoring\User.h">
+    <ClInclude Include="scr\users\User.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\refactoring\Post.h">
+    <ClInclude Include="scr\users\Post.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\refactoring\PaidUser.h">
+    <ClInclude Include="scr\users\PaidUser.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\refactoring\LoginSystem.h">
+    <ClInclude Include="scr\users\LoginSystem.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="scr\serviceClasses\UserIdGenerator.h">
@@ -113,22 +113,22 @@
     <ClInclude Include="scr\ProgramDemo.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\polymorphism\Product.h">
+    <ClInclude Include="scr\discountSystem\Product.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\polymorphism\ProductCategory.h">
+    <ClInclude Include="scr\discountSystem\ProductCategory.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\polymorphism\DiscountBase.h">
+    <ClInclude Include="scr\discountSystem\DiscountBase.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\polymorphism\PercentDiscount.h">
+    <ClInclude Include="scr\discountSystem\PercentDiscount.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\polymorphism\CertificateDiscount.h">
+    <ClInclude Include="scr\discountSystem\CertificateDiscount.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="scr\polymorphism\IOProduct.h">
+    <ClInclude Include="scr\discountSystem\IOProduct.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,12 +1,12 @@
 ﻿#pragma once
 
-#include "inheritance/IOPerson.h"
-#include "refactoring/LoginSystem.h"
-#include "refactoring/PaidUser.h"
-#include "refactoring/Post.h"
-#include "polymorphism/CertificateDiscount.h"
-#include "polymorphism/PercentDiscount.h"
-#include "polymorphism/IOProduct.h"
+#include "university/IOPerson.h"
+#include "users/LoginSystem.h"
+#include "users/PaidUser.h"
+#include "users/Post.h"
+#include "discountSystem/CertificateDiscount.h"
+#include "discountSystem/PercentDiscount.h"
+#include "discountSystem/IOProduct.h"
 
 /// <summary>
 /// Функция по демонстрации работы наследования от класса Person в консоле

@@ -20,7 +20,12 @@ class DiscountBase
 	void SetCategory(ProductCategory category);
 
 protected:
-	// TODO: отсутствует комментарий
+	// TODO: + отсутствует комментарий
+
+	/// <summary>
+	/// Конструктор с параметрами
+	/// </summary>
+	/// <param name="category">Категория товара на которую будет распространяться скидка</param>
 	DiscountBase(ProductCategory category);
 
 public:

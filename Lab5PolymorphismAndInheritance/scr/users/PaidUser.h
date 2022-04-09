@@ -16,7 +16,13 @@ class PaidUser : public User
 	std::vector<Post*> _posts;
 
 public:
-	// TODO: комментарий
+	// TODO: + комментарий
+
+	/// <summary>
+	/// Конструктор с параметрами для платного пользователя
+	/// </summary>
+	/// <param name="login">Логин платного пользователя</param>
+	/// <param name="password">Пароль платного пользователя</param>
 	PaidUser(const std::string& login, const std::string& password);
 
 	/// <summary>

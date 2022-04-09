@@ -18,6 +18,11 @@ class Post
 	std::string _text;
 
 public:
+	/// <summary>
+	/// Конструктор с параметрами для статьи
+	/// </summary>
+	/// <param name="title">Название статьи</param>
+	/// <param name="text">Текст статьи</param>
 	Post(const std::string& title, const std::string& text);
 
 	/// <summary>

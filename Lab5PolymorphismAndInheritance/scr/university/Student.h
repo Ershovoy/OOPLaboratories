@@ -29,10 +29,18 @@ class Student : public Person
 	void SetAdmissionYear(int admissionYear);
 
 public:
-	// TODO: не забыть здесь поменять названия локальных переменных
+	// TODO: + не забыть здесь поменять названия локальных переменных
+
+	/// <summary>
+	/// Конструктор с параметрами для студента
+	/// </summary>
+	/// <param name="firstName">Имя студента</param>
+	/// <param name="surname">Фамилия студента</param>
+	/// <param name="patronymic">Отчество студента</param>
+	/// <param name="admissionYear">Год его поступления</param>
 	Student(const std::string& firstName,
-			const std::string& secondName,
-			const std::string& thirdName,
+			const std::string& surname,
+			const std::string& patronymic,
 			int admissionYear);
 
 	/// <summary>

@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include "DiscountBase.h"
+#include "..\serviceClasses\NumberValidator.h"
 
 /// <summary>
 /// Реализация интерфейса процентный скидок от виртуального класса DiscountBase
@@ -13,6 +14,11 @@ class PercentDiscount : public DiscountBase
 	float _percent;
 
 public:
+	/// <summary>
+	/// Конструктор с параметрами для процентной скидки
+	/// </summary>
+	/// <param name="category">Категория товара на которую действует скидка</param>
+	/// <param name="percent">Процент скидки</param>
 	PercentDiscount(ProductCategory category, float percent);
 
 	/// <summary>

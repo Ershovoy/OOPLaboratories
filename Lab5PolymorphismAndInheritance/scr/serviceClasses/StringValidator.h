@@ -1,12 +1,13 @@
 ﻿#pragma once
 
 #include <string>
+#include <exception>
 
-// TODO: сделать класс статическим
+// TODO: + сделать класс статическим
 /// <summary>
 /// Серверный класс для проверки корректности сток
 /// </summary>
-class StringValidator
+static class StringValidator
 {
 	StringValidator() = delete;
 

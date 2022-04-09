@@ -10,7 +10,7 @@ int main()
 		User,
 		Discount
 	};
-	
+
 	std::cout << "Enter 1 to run person demo.\n";
 	std::cout << "Enter 2 to run user demo.\n";
 	std::cout << "Enter 3 to run discount demo.\n";
@@ -46,5 +46,4 @@ int main()
 		}
 	}
 	return 0;
-
 }

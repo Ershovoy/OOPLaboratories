@@ -2,11 +2,11 @@
 
 #include <string>
 
-// TODO: сам класс отметить модификатором static
+// TODO: + сам класс отметить модификатором static
 /// <summary>
 /// Серверный класс для проверки корректности чисел
 /// </summary>
-class NumberValidator
+static class NumberValidator
 {
 	NumberValidator() = delete;
 
@@ -17,5 +17,33 @@ public:
 	/// <param name="number">Число для проверки</param>
 	/// <param name="minimum">Минимальное значение диапазона</param>
 	/// <param name="maximum">Максимальное значение диапазона</param>
-	static void AssertNumberInRange(int number, int minimum, int maximum);
+	/// <param name="numberType">Логический смысл проверяемого числа для вывода в сообщении о ошибке</param>
+	static void AssertNumberInRange(double number,
+									double minimum,
+									double maximum,
+									const std::string& numberType = "Number");
+
+	/// <summary>
+	/// Проверить входимость числа в заданный диапазон
+	/// </summary>
+	/// <param name="number">Число для проверки</param>
+	/// <param name="minimum">Минимальное значение диапазона</param>
+	/// <param name="maximum">Максимальное значение диапазона</param>
+	/// <param name="numberType">Логический смысл проверяемого числа для вывода в сообщении о ошибке</param>
+	static void AssertNumberInRange(float number,
+									float minimum,
+									float maximum,
+									const std::string& numberType = "Number");
+
+	/// <summary>
+	/// Проверить входимость числа в заданный диапазон
+	/// </summary>
+	/// <param name="number">Число для проверки</param>
+	/// <param name="minimum">Минимальное значение диапазона</param>
+	/// <param name="maximum">Максимальное значение диапазона</param>
+	/// <param name="numberType">Логический смысл проверяемого числа для вывода в сообщении о ошибке</param>
+	static void AssertNumberInRange(int number,
+									int minimum,
+									int maximum,
+									const std::string& numberType = "Number");
 };

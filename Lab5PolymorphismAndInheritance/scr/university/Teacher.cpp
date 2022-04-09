@@ -13,8 +13,8 @@ void Teacher::SetPosition(std::string position)
 {
 	if(!StringValidator::IsContainOnlyLetters(position))
 	{
-		// TODO: нужно кидать не строки, а объекты класса exception()
-		throw "Error occure: Position of teacher must have only letter.";
+		// TODO: + нужно кидать не строки, а объекты класса exception()
+		throw std::exception("Error occure: Position of teacher must have only letter.");
 	}
 	_position = position;
 }

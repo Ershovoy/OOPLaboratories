@@ -1,13 +1,13 @@
 ﻿#pragma once
 
-// TODO: аналогично генератору для студентов
+// TODO: + аналогично генератору для студентов
 /// <summary>
 /// Клас для генерации уникальных ID для класса User
 /// </summary>
-class UserIdGenerator
+static class UserIdGenerator
 {
 	UserIdGenerator() = delete;
-
+	
 	/// <summary>
 	/// Последний зарегистрированный ID
 	/// </summary>

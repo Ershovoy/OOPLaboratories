@@ -26,6 +26,11 @@ class User
 	std::string _password;
 
 public:
+	/// <summary>
+	/// Конструктор с параметрами для пользователя
+	/// </summary>
+	/// <param name="login">Логин пользователя</param>
+	/// <param name="password">Пароль пользователя</param>
 	User(const std::string& login, const std::string& password);
 
 	/// <summary>

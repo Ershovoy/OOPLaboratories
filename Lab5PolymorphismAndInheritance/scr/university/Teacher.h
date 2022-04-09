@@ -13,10 +13,18 @@ class Teacher : public Person
 	std::string _position;
 
 public:
-	// TODO: переименовать локальные переменные
+	// TODO: + переименовать локальные переменные
+
+	/// <summary>
+	/// Конструктор с параметрами для учителя
+	/// </summary>
+	/// <param name="firstName">Имя учителя</param>
+	/// <param name="surname">Фамилия учителя</param>
+	/// <param name="patronymic">Отчество учителя</param>
+	/// <param name="position">Его должность</param>
 	Teacher(const std::string& firstName,
-			const std::string& secondName,
-			const std::string& thirdName,
+			const std::string& surname,
+			const std::string& patronymic,
 			const std::string& position);
 
 	/// <summary>

@@ -2,7 +2,7 @@
 
 #include "DiscountBase.h"
 
-// TODO: Все заголовочные файлы и файлы исходного кода рассортировать по подпапкам каждой предметной области
+// TODO: + Все заголовочные файлы и файлы исходного кода рассортировать по подпапкам каждой предметной области
 /// <summary>
 /// Реализация интерфейса скидок для скидочного купона
 /// </summary>
@@ -14,6 +14,11 @@ class CertificateDiscount : public DiscountBase
 	float _amount;
 
 public:
+	/// <summary>
+	/// Конструктор с параметрами для скидки по сертификату
+	/// </summary>
+	/// <param name="category">Категория продукта на которую действует скидка</param>
+	/// <param name="amount">Размер скидочного купона</param>
 	CertificateDiscount(ProductCategory category, float amount);
 
 	/// <summary>

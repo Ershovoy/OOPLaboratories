@@ -7,10 +7,10 @@ void Student::SetAdmissionYear(int admissionYear)
 }
 
 Student::Student(const std::string& firstName,
-				 const std::string& secondName, 
-				 const std::string& thirdName, 
+				 const std::string& surname, 
+				 const std::string& patronymic, 
 				 int admissionYear) :
-				 Person(firstName, secondName, thirdName)
+				 Person(firstName, surname, patronymic)
 {
 	SetAdmissionYear(admissionYear);
 	_id = StudentIdGenerator::GetNewId();

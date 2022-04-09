@@ -12,8 +12,8 @@ User* Login(User** users, int usersCount, std::string& enteredLogin, std::string
 			}
 			else
 			{
-				// TODO: нужно кидать не строки, а объекты класса exception()
-				throw "Uncorrect password.";
+				// TODO: + нужно кидать не строки, а объекты класса exception()
+				throw std::exception("Uncorrect password.");
 			}
 		}
 	}

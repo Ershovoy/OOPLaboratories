@@ -2,6 +2,7 @@
 
 #include "ProductCategory.h"
 #include "..\serviceClasses\StringValidator.h"
+#include "..\serviceClasses\NumberValidator.h"
 
 #include <string>
 
@@ -26,7 +27,14 @@ class Product
 	ProductCategory _category;
 
 public:
-	// TODO: здесь и во всех остальных классах добавить комментарии к конструкторам
+	// TODO: + здесь и во всех остальных классах добавить комментарии к конструкторам
+
+	/// <summary>
+	/// Конструктор с параметрами для продукта
+	/// </summary>
+	/// <param name="title">Название продукта</param>
+	/// <param name="cost">Цена продукта</param>
+	/// <param name="category">Категория продукта</param>
 	Product(std::string title, float cost, ProductCategory category);
 
 	/// <summary>

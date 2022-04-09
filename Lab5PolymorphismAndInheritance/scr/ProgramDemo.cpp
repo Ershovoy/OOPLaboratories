@@ -68,7 +68,7 @@ void WriteUserDemoToConsole()
 
 void WriteDiscountDemoToConsole()
 {
-	// TODO: утечка памяти
+	// TODO: + утечка памяти
 	Product* product1 = new Product("LG49N000", 40'000, ProductCategory::TV);
 	Product* product2 = new Product("Q1", 2'000, ProductCategory::Micromax);
 	Product* product3 = new Product("M650", 8'000, ProductCategory::Pantum);
@@ -81,4 +81,12 @@ void WriteDiscountDemoToConsole()
 	WriteDiscountDifferenceToConsole(discount2, product2);
 	WriteDiscountDifferenceToConsole(discount2, product3);
 	WriteDiscountDifferenceToConsole(discount2, product4);
+
+	delete product1;
+	delete product2;
+	delete product3;
+	delete product4;
+
+	delete discount1;
+	delete discount2;
 }
