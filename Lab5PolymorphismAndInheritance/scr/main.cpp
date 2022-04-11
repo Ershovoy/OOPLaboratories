@@ -1,4 +1,4 @@
-﻿#include "inheritance/IOPerson.h"
+﻿#include "university/IOPerson.h"
 
 #include "ProgramDemo.h"
 
